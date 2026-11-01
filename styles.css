@@ -32,3 +32,5 @@ button{color:inherit}.event-subtitle{display:block;margin-top:10px;font-size:10p
 @media(max-width:700px){.filters{grid-template-columns:repeat(2,minmax(0,1fr))}.filters select{max-width:none}.profile-avatar{width:65px;height:65px}.player-detail-heading{gap:12px}.player-detail-heading h2{font-size:20px}.topbar nav{gap:8px}}
 
 .formula{border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-bottom:22px}.formula-base,.formula small{display:block;color:var(--muted);font-size:11px}.formula p{font-size:14px;line-height:1.6;margin:7px 0}.formula p b{color:var(--text)}
+/* Keep result titles and full artwork readable inside mobile dialogs. */
+.detail-top{display:block}.detail-top.player-detail-heading{display:flex}dialog .large-cover{width:100%}
