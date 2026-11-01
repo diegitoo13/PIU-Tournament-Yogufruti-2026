@@ -70,6 +70,16 @@ window.TOURNAMENT_DATA = {
       "photo": "",
       "photoPosition": "50% 50%",
       "resultStatus": "recorded"
+    },
+    {
+      "id": "PLY-0007",
+      "name": "AZUAAAAO",
+      "publicName": "AZUAAAAO",
+      "location": "",
+      "country": "",
+      "photo": "",
+      "photoPosition": "50% 50%",
+      "resultStatus": "recorded"
     }
   ],
   "results": [
@@ -101,6 +111,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 2300,
       "sourceEvidence": "evidencias/DIEGITOO113/IMG_4027.jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 7,
+        "range": "A7:AH7",
+        "judgmentRange": "K7:O7"
+      },
       "reviewNote": null
     },
     {
@@ -131,6 +148,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 2520,
       "sourceEvidence": "evidencias/DIEGITOO113/IMG_4026.jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 8,
+        "range": "A8:AH8",
+        "judgmentRange": "K8:O8"
+      },
       "reviewNote": null
     },
     {
@@ -161,6 +185,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 2600,
       "sourceEvidence": "evidencias/DIEGITOO113/IMG_4025.jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 9,
+        "range": "A9:AH9",
+        "judgmentRange": "K9:O9"
+      },
       "reviewNote": null
     },
     {
@@ -191,6 +222,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 2700,
       "sourceEvidence": "evidencias/DIEGITOO113/IMG_4024.jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 10,
+        "range": "A10:AH10",
+        "judgmentRange": "K10:O10"
+      },
       "reviewNote": null
     },
     {
@@ -221,6 +259,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 2800,
       "sourceEvidence": "evidencias/DIEGITOO113/IMG_4022.jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 11,
+        "range": "A11:AH11",
+        "judgmentRange": "K11:O11"
+      },
       "reviewNote": null
     },
     {
@@ -241,7 +286,7 @@ window.TOURNAMENT_DATA = {
       "bad": 1,
       "miss": 1,
       "combo": 534,
-      "kcal": 45.044,
+      "kcal": 43.044,
       "performance": "MARVELOUS GAME",
       "passStatus": "Unverified",
       "cut": "Arcade",
@@ -251,7 +296,14 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 3000,
       "sourceEvidence": "evidencias/DIEGITOO113/IMG_4023.jpeg",
       "verification": "Player workbook",
-      "reviewNote": "Calories: the supplied workbook says 43.044; the earlier readable score photo shows 45.044. Photo value retained pending reconciliation."
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 12,
+        "range": "A12:AH12",
+        "judgmentRange": "K12:O12"
+      },
+      "reviewNote": "Calories follow the latest workbook: 43.044. An earlier photo transcription recorded 45.044; the workbook is the current source of record."
     },
     {
       "id": "ATT-00007",
@@ -281,6 +333,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 2600,
       "sourceEvidence": "evidencias/DIEGITOO113/IMG_4021.jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 13,
+        "range": "A13:AH13",
+        "judgmentRange": "K13:O13"
+      },
       "reviewNote": null
     },
     {
@@ -311,6 +370,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 2800,
       "sourceEvidence": "evidencias/DIEGITOO113/IMG_4019.jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 14,
+        "range": "A14:AH14",
+        "judgmentRange": "K14:O14"
+      },
       "reviewNote": null
     },
     {
@@ -341,6 +407,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 2730,
       "sourceEvidence": "evidencias/DIEGITOO113/IMG_4018.jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 15,
+        "range": "A15:AH15",
+        "judgmentRange": "K15:O15"
+      },
       "reviewNote": null
     },
     {
@@ -371,6 +444,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 2800,
       "sourceEvidence": "evidencias/DIEGITOO113/IMG_4017.jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 16,
+        "range": "A16:AH16",
+        "judgmentRange": "K16:O16"
+      },
       "reviewNote": null
     },
     {
@@ -401,6 +481,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 2310,
       "sourceEvidence": "evidencias/DIEGITOO113/IMG_4016.jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 17,
+        "range": "A17:AH17",
+        "judgmentRange": "K17:O17"
+      },
       "reviewNote": null
     },
     {
@@ -431,6 +518,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 2420,
       "sourceEvidence": "evidencias/DIEGITOO113/IMG_4015.jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 18,
+        "range": "A18:AH18",
+        "judgmentRange": "K18:O18"
+      },
       "reviewNote": null
     },
     {
@@ -461,6 +555,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 2280,
       "sourceEvidence": "evidencias/GHOST/IMG_4028.jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 19,
+        "range": "A19:AH19",
+        "judgmentRange": "K19:O19"
+      },
       "reviewNote": null
     },
     {
@@ -491,6 +592,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 2610,
       "sourceEvidence": "evidencias/GHOST/IMG_4029.jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 20,
+        "range": "A20:AH20",
+        "judgmentRange": "K20:O20"
+      },
       "reviewNote": null
     },
     {
@@ -521,6 +629,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 2610,
       "sourceEvidence": "evidencias/GHOST/IMG_4030.jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 21,
+        "range": "A21:AH21",
+        "judgmentRange": "K21:O21"
+      },
       "reviewNote": null
     },
     {
@@ -551,6 +666,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 2520,
       "sourceEvidence": "evidencias/GHOST/IMG_4031.jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 22,
+        "range": "A22:AH22",
+        "judgmentRange": "K22:O22"
+      },
       "reviewNote": null
     },
     {
@@ -581,6 +703,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 2400,
       "sourceEvidence": "evidencias/GHOST/IMG_4032.jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 23,
+        "range": "A23:AH23",
+        "judgmentRange": "K23:O23"
+      },
       "reviewNote": null
     },
     {
@@ -611,6 +740,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 2205,
       "sourceEvidence": "evidencias/GHOST/IMG_4033.jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 24,
+        "range": "A24:AH24",
+        "judgmentRange": "K24:O24"
+      },
       "reviewNote": null
     },
     {
@@ -641,6 +777,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 2400,
       "sourceEvidence": "evidencias/GHOST/IMG_4034.jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 25,
+        "range": "A25:AH25",
+        "judgmentRange": "K25:O25"
+      },
       "reviewNote": null
     },
     {
@@ -671,6 +814,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 2340,
       "sourceEvidence": "evidencias/GHOST/IMG_4035.jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 26,
+        "range": "A26:AH26",
+        "judgmentRange": "K26:O26"
+      },
       "reviewNote": null
     },
     {
@@ -701,6 +851,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 2340,
       "sourceEvidence": "evidencias/GHOST/IMG_4036.jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 27,
+        "range": "A27:AH27",
+        "judgmentRange": "K27:O27"
+      },
       "reviewNote": null
     },
     {
@@ -731,6 +888,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 2600,
       "sourceEvidence": "evidencias/GHOST/IMG_4037.jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 28,
+        "range": "A28:AH28",
+        "judgmentRange": "K28:O28"
+      },
       "reviewNote": null
     },
     {
@@ -761,6 +925,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 2790,
       "sourceEvidence": "evidencias/GHOST/IMG_4038.jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 29,
+        "range": "A29:AH29",
+        "judgmentRange": "K29:O29"
+      },
       "reviewNote": null
     },
     {
@@ -791,6 +962,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 2610,
       "sourceEvidence": "evidencias/GHOST/IMG_4039.jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 30,
+        "range": "A30:AH30",
+        "judgmentRange": "K30:O30"
+      },
       "reviewNote": null
     },
     {
@@ -821,6 +999,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 1920,
       "sourceEvidence": "evidencias/SPRADA/IMG_4078(1).jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 31,
+        "range": "A31:AH31",
+        "judgmentRange": "K31:O31"
+      },
       "reviewNote": null
     },
     {
@@ -851,6 +1036,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 2240,
       "sourceEvidence": "evidencias/SPRADA/IMG_4077(1).jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 32,
+        "range": "A32:AH32",
+        "judgmentRange": "K32:O32"
+      },
       "reviewNote": null
     },
     {
@@ -881,6 +1073,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 2040,
       "sourceEvidence": "evidencias/SPRADA/IMG_4076(1).jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 33,
+        "range": "A33:AH33",
+        "judgmentRange": "K33:O33"
+      },
       "reviewNote": null
     },
     {
@@ -911,6 +1110,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 1700,
       "sourceEvidence": "evidencias/SPRADA/IMG_4075(1).jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 34,
+        "range": "A34:AH34",
+        "judgmentRange": "K34:O34"
+      },
       "reviewNote": null
     },
     {
@@ -941,6 +1147,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 2040,
       "sourceEvidence": "evidencias/SPRADA/IMG_4073(1).jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 35,
+        "range": "A35:AH35",
+        "judgmentRange": "K35:O35"
+      },
       "reviewNote": null
     },
     {
@@ -971,6 +1184,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 2160,
       "sourceEvidence": "evidencias/SPRADA/IMG_4074(1).jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 36,
+        "range": "A36:AH36",
+        "judgmentRange": "K36:O36"
+      },
       "reviewNote": null
     },
     {
@@ -1001,6 +1221,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 2380,
       "sourceEvidence": "evidencias/SPRADA/IMG_4072(1).jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 37,
+        "range": "A37:AH37",
+        "judgmentRange": "K37:O37"
+      },
       "reviewNote": null
     },
     {
@@ -1031,6 +1258,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 1980,
       "sourceEvidence": "evidencias/SPRADA/IMG_4070(1).jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 38,
+        "range": "A38:AH38",
+        "judgmentRange": "K38:O38"
+      },
       "reviewNote": null
     },
     {
@@ -1061,6 +1295,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 1350,
       "sourceEvidence": "evidencias/SPRADA/IMG_4071(1).jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 39,
+        "range": "A39:AH39",
+        "judgmentRange": "K39:O39"
+      },
       "reviewNote": null
     },
     {
@@ -1091,6 +1332,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 2160,
       "sourceEvidence": "evidencias/SPRADA/IMG_4069(1).jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 40,
+        "range": "A40:AH40",
+        "judgmentRange": "K40:O40"
+      },
       "reviewNote": null
     },
     {
@@ -1121,6 +1369,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 1980,
       "sourceEvidence": "evidencias/SPRADA/IMG_4068.jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 41,
+        "range": "A41:AH41",
+        "judgmentRange": "K41:O41"
+      },
       "reviewNote": null
     },
     {
@@ -1151,6 +1406,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 1980,
       "sourceEvidence": "evidencias/SPRADA/IMG_4067(1).jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 42,
+        "range": "A42:AH42",
+        "judgmentRange": "K42:O42"
+      },
       "reviewNote": null
     },
     {
@@ -1181,6 +1443,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 1210,
       "sourceEvidence": "evidencias/MARCYS/IMG_4093.jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 43,
+        "range": "A43:AH43",
+        "judgmentRange": "K43:O43"
+      },
       "reviewNote": null
     },
     {
@@ -1211,6 +1480,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 1155,
       "sourceEvidence": "evidencias/MARCYS/IMG_4092.jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 44,
+        "range": "A44:AH44",
+        "judgmentRange": "K44:O44"
+      },
       "reviewNote": null
     },
     {
@@ -1241,6 +1517,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 1485,
       "sourceEvidence": "evidencias/MARCYS/att.vv5_oywMyS7DZdOo_UgppkNi1Q3v2ZbCR6YW2B0RQy4.jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 45,
+        "range": "A45:AH45",
+        "judgmentRange": "K45:O45"
+      },
       "reviewNote": null
     },
     {
@@ -1271,6 +1554,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 1200,
       "sourceEvidence": "evidencias/MARCYS/att.8HCCWjJ2gjRGF3DEkrg9tJp3tHWduEk02-WNiasO1U0.jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 46,
+        "range": "A46:AH46",
+        "judgmentRange": "K46:O46"
+      },
       "reviewNote": null
     },
     {
@@ -1301,6 +1591,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 1100,
       "sourceEvidence": "evidencias/MARCYS/att.d029kOteOW35TxOgXIw_U_-tmfOOC6JkZZIxzi6gftE.jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 47,
+        "range": "A47:AH47",
+        "judgmentRange": "K47:O47"
+      },
       "reviewNote": null
     },
     {
@@ -1331,6 +1628,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 1320,
       "sourceEvidence": "evidencias/MARCYS/att.p8eLgKbQ-2_d4xv2NwCd-i6n-O1j-jzSyulMnZJW5co.jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 48,
+        "range": "A48:AH48",
+        "judgmentRange": "K48:O48"
+      },
       "reviewNote": null
     },
     {
@@ -1361,6 +1665,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 1100,
       "sourceEvidence": "evidencias/MARCYS/IMG_4083.jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 49,
+        "range": "A49:AH49",
+        "judgmentRange": "K49:O49"
+      },
       "reviewNote": null
     },
     {
@@ -1391,6 +1702,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 825,
       "sourceEvidence": "evidencias/MARCYS/att.NIeskCvopVCMO-AmJvtCeK6Zm92VUgJhHdvjRxS4HB0.jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 50,
+        "range": "A50:AH50",
+        "judgmentRange": "K50:O50"
+      },
       "reviewNote": null
     },
     {
@@ -1421,6 +1739,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 900,
       "sourceEvidence": "evidencias/MARCYS/IMG_4082.jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 51,
+        "range": "A51:AH51",
+        "judgmentRange": "K51:O51"
+      },
       "reviewNote": null
     },
     {
@@ -1451,6 +1776,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 825,
       "sourceEvidence": "evidencias/MARCYS/att.XEOdodr21JSXfQRDMNR3liT-iCbIJuVeZQGFnfW16Qs.jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 52,
+        "range": "A52:AH52",
+        "judgmentRange": "K52:O52"
+      },
       "reviewNote": null
     },
     {
@@ -1481,6 +1813,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 1690,
       "sourceEvidence": "evidencias/MARCYS/IMG_4081.jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 53,
+        "range": "A53:AH53",
+        "judgmentRange": "K53:O53"
+      },
       "reviewNote": null
     },
     {
@@ -1511,6 +1850,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 1200,
       "sourceEvidence": "evidencias/MARCYS/IMG_4080.jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 54,
+        "range": "A54:AH54",
+        "judgmentRange": "K54:O54"
+      },
       "reviewNote": null
     },
     {
@@ -1541,6 +1887,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 2325,
       "sourceEvidence": "evidencias/SOYASAUCE/IMG_4051.jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 55,
+        "range": "A55:AH55",
+        "judgmentRange": "K55:O55"
+      },
       "reviewNote": "Song title is unverified. Points follow the supplied workbook and remain provisional until song identity and duplicate checks are complete."
     },
     {
@@ -1571,6 +1924,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 2250,
       "sourceEvidence": "evidencias/SOYASAUCE/IMG_4052.jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 56,
+        "range": "A56:AH56",
+        "judgmentRange": "K56:O56"
+      },
       "reviewNote": "Song title is unverified. Points follow the supplied workbook and remain provisional until song identity and duplicate checks are complete."
     },
     {
@@ -1601,6 +1961,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 2100,
       "sourceEvidence": "evidencias/SOYASAUCE/IMG_4053.jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 57,
+        "range": "A57:AH57",
+        "judgmentRange": "K57:O57"
+      },
       "reviewNote": null
     },
     {
@@ -1631,6 +1998,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 2325,
       "sourceEvidence": "evidencias/SOYASAUCE/IMG_4054.jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 58,
+        "range": "A58:AH58",
+        "judgmentRange": "K58:O58"
+      },
       "reviewNote": null
     },
     {
@@ -1661,6 +2035,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 2250,
       "sourceEvidence": "evidencias/SOYASAUCE/IMG_4055.jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 59,
+        "range": "A59:AH59",
+        "judgmentRange": "K59:O59"
+      },
       "reviewNote": null
     },
     {
@@ -1691,6 +2072,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 2250,
       "sourceEvidence": "evidencias/SOYASAUCE/IMG_4056.jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 60,
+        "range": "A60:AH60",
+        "judgmentRange": "K60:O60"
+      },
       "reviewNote": null
     },
     {
@@ -1721,6 +2109,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 2175,
       "sourceEvidence": "evidencias/SOYASAUCE/IMG_4057.jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 61,
+        "range": "A61:AH61",
+        "judgmentRange": "K61:O61"
+      },
       "reviewNote": null
     },
     {
@@ -1751,6 +2146,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 2325,
       "sourceEvidence": "evidencias/SOYASAUCE/IMG_4058.jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 62,
+        "range": "A62:AH62",
+        "judgmentRange": "K62:O62"
+      },
       "reviewNote": "Song title is unverified. Points follow the supplied workbook and remain provisional until song identity and duplicate checks are complete."
     },
     {
@@ -1781,6 +2183,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 2610,
       "sourceEvidence": "evidencias/SOYASAUCE/IMG_4059.jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 63,
+        "range": "A63:AH63",
+        "judgmentRange": "K63:O63"
+      },
       "reviewNote": null
     },
     {
@@ -1811,6 +2220,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 2430,
       "sourceEvidence": "evidencias/SOYASAUCE/IMG_4060.jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 64,
+        "range": "A64:AH64",
+        "judgmentRange": "K64:O64"
+      },
       "reviewNote": null
     },
     {
@@ -1841,6 +2257,13 @@ window.TOURNAMENT_DATA = {
       "sourcePoints": 2325,
       "sourceEvidence": "evidencias/SOYASAUCE/IMG_4095.jpeg",
       "verification": "Player workbook",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 65,
+        "range": "A65:AH65",
+        "judgmentRange": "K65:O65"
+      },
       "reviewNote": null
     },
     {
@@ -1870,7 +2293,11 @@ window.TOURNAMENT_DATA = {
       "songIdentityVerified": true,
       "sourcePoints": 1275,
       "sourceEvidence": "evidencias/NUMI/IMG_4121.jpeg",
-      "verification": "Corrected NUMI CSV",
+      "verification": "Player CSV",
+      "sourceReference": {
+        "file": "PIU_2026_Intentos_NUMI_12_corregidos.csv",
+        "row": 2
+      },
       "reviewNote": null
     },
     {
@@ -1900,7 +2327,11 @@ window.TOURNAMENT_DATA = {
       "songIdentityVerified": true,
       "sourcePoints": 2160,
       "sourceEvidence": "evidencias/NUMI/IMG_4118.jpeg",
-      "verification": "Corrected NUMI CSV",
+      "verification": "Player CSV",
+      "sourceReference": {
+        "file": "PIU_2026_Intentos_NUMI_12_corregidos.csv",
+        "row": 3
+      },
       "reviewNote": null
     },
     {
@@ -1930,7 +2361,11 @@ window.TOURNAMENT_DATA = {
       "songIdentityVerified": true,
       "sourcePoints": 2100,
       "sourceEvidence": "evidencias/NUMI/IMG_4116.jpeg",
-      "verification": "Corrected NUMI CSV",
+      "verification": "Player CSV",
+      "sourceReference": {
+        "file": "PIU_2026_Intentos_NUMI_12_corregidos.csv",
+        "row": 4
+      },
       "reviewNote": null
     },
     {
@@ -1960,7 +2395,11 @@ window.TOURNAMENT_DATA = {
       "songIdentityVerified": true,
       "sourcePoints": 1920,
       "sourceEvidence": "evidencias/NUMI/IMG_4117.jpeg",
-      "verification": "Corrected NUMI CSV",
+      "verification": "Player CSV",
+      "sourceReference": {
+        "file": "PIU_2026_Intentos_NUMI_12_corregidos.csv",
+        "row": 5
+      },
       "reviewNote": null
     },
     {
@@ -1990,7 +2429,11 @@ window.TOURNAMENT_DATA = {
       "songIdentityVerified": true,
       "sourcePoints": 1365,
       "sourceEvidence": "evidencias/NUMI/IMG_4115.jpeg",
-      "verification": "Corrected NUMI CSV",
+      "verification": "Player CSV",
+      "sourceReference": {
+        "file": "PIU_2026_Intentos_NUMI_12_corregidos.csv",
+        "row": 6
+      },
       "reviewNote": null
     },
     {
@@ -2020,7 +2463,11 @@ window.TOURNAMENT_DATA = {
       "songIdentityVerified": true,
       "sourcePoints": 1200,
       "sourceEvidence": "evidencias/NUMI/IMG_4114.jpeg",
-      "verification": "Corrected NUMI CSV",
+      "verification": "Player CSV",
+      "sourceReference": {
+        "file": "PIU_2026_Intentos_NUMI_12_corregidos.csv",
+        "row": 7
+      },
       "reviewNote": null
     },
     {
@@ -2050,7 +2497,11 @@ window.TOURNAMENT_DATA = {
       "songIdentityVerified": true,
       "sourcePoints": 2025,
       "sourceEvidence": "evidencias/NUMI/IMG_4113.jpeg",
-      "verification": "Corrected NUMI CSV",
+      "verification": "Player CSV",
+      "sourceReference": {
+        "file": "PIU_2026_Intentos_NUMI_12_corregidos.csv",
+        "row": 8
+      },
       "reviewNote": null
     },
     {
@@ -2080,7 +2531,11 @@ window.TOURNAMENT_DATA = {
       "songIdentityVerified": true,
       "sourcePoints": 2090,
       "sourceEvidence": "evidencias/NUMI/IMG_4112.jpeg",
-      "verification": "Corrected NUMI CSV",
+      "verification": "Player CSV",
+      "sourceReference": {
+        "file": "PIU_2026_Intentos_NUMI_12_corregidos.csv",
+        "row": 9
+      },
       "reviewNote": null
     },
     {
@@ -2110,7 +2565,11 @@ window.TOURNAMENT_DATA = {
       "songIdentityVerified": true,
       "sourcePoints": 1870,
       "sourceEvidence": "evidencias/NUMI/IMG_4120.jpeg",
-      "verification": "Corrected NUMI CSV",
+      "verification": "Player CSV",
+      "sourceReference": {
+        "file": "PIU_2026_Intentos_NUMI_12_corregidos.csv",
+        "row": 10
+      },
       "reviewNote": "Assigned to NUMI by participant confirmation, although the source screenshot shows SPRADA’s game profile."
     },
     {
@@ -2140,7 +2599,11 @@ window.TOURNAMENT_DATA = {
       "songIdentityVerified": true,
       "sourcePoints": 1800,
       "sourceEvidence": "evidencias/NUMI/IMG_4119.jpeg",
-      "verification": "Corrected NUMI CSV",
+      "verification": "Player CSV",
+      "sourceReference": {
+        "file": "PIU_2026_Intentos_NUMI_12_corregidos.csv",
+        "row": 11
+      },
       "reviewNote": "Assigned to NUMI by participant confirmation, although the source screenshot shows SPRADA’s game profile."
     },
     {
@@ -2170,7 +2633,11 @@ window.TOURNAMENT_DATA = {
       "songIdentityVerified": true,
       "sourcePoints": 2160,
       "sourceEvidence": "evidencias/NUMI/IMG_4111(1).jpeg",
-      "verification": "Corrected NUMI CSV",
+      "verification": "Player CSV",
+      "sourceReference": {
+        "file": "PIU_2026_Intentos_NUMI_12_corregidos.csv",
+        "row": 12
+      },
       "reviewNote": null
     },
     {
@@ -2200,7 +2667,419 @@ window.TOURNAMENT_DATA = {
       "songIdentityVerified": true,
       "sourcePoints": 1890,
       "sourceEvidence": "evidencias/NUMI/IMG_4110(1).jpeg",
-      "verification": "Corrected NUMI CSV",
+      "verification": "Player CSV",
+      "sourceReference": {
+        "file": "PIU_2026_Intentos_NUMI_12_corregidos.csv",
+        "row": 13
+      },
+      "reviewNote": null
+    },
+    {
+      "id": "ATT-00072",
+      "player": "PLY-0007",
+      "sourceSongId": 1007,
+      "songId": "pumpout:1007",
+      "sourceSongKey": "SONG-0011",
+      "sourceChartKey": "CHART-0071",
+      "song": "Break Through Myself feat. Risa Yuzuki",
+      "mode": "Single",
+      "level": 15,
+      "score": 774275,
+      "grade": "B",
+      "perfect": 652,
+      "great": 64,
+      "good": 30,
+      "bad": 31,
+      "miss": 123,
+      "combo": 169,
+      "kcal": 31.872,
+      "performance": null,
+      "passStatus": "Unverified",
+      "cut": "Arcade",
+      "valid": true,
+      "selectionSecond": null,
+      "songIdentityVerified": true,
+      "sourcePoints": 1125,
+      "sourceEvidence": "",
+      "verification": "Player CSV",
+      "sourceReference": {
+        "file": "AZUAAAAO_12_canciones_datos_completos.csv",
+        "row": 2
+      },
+      "reviewNote": null
+    },
+    {
+      "id": "ATT-00073",
+      "player": "PLY-0007",
+      "sourceSongId": 826,
+      "songId": "pumpout:826",
+      "sourceSongKey": "SONG-0067",
+      "sourceChartKey": "CHART-0072",
+      "song": "Cycling!",
+      "mode": "Single",
+      "level": 10,
+      "score": 857604,
+      "grade": "A",
+      "perfect": 506,
+      "great": 44,
+      "good": 27,
+      "bad": 11,
+      "miss": 38,
+      "combo": 131,
+      "kcal": 30.946,
+      "performance": null,
+      "passStatus": "Unverified",
+      "cut": "Arcade",
+      "valid": true,
+      "selectionSecond": null,
+      "songIdentityVerified": true,
+      "sourcePoints": 750,
+      "sourceEvidence": "",
+      "verification": "Player CSV",
+      "sourceReference": {
+        "file": "AZUAAAAO_12_canciones_datos_completos.csv",
+        "row": 3
+      },
+      "reviewNote": null
+    },
+    {
+      "id": "ATT-00074",
+      "player": "PLY-0007",
+      "sourceSongId": 981,
+      "songId": "pumpout:981",
+      "sourceSongKey": "SONG-0068",
+      "sourceChartKey": "CHART-0073",
+      "song": "Fracture Temporelle",
+      "mode": "Single",
+      "level": 12,
+      "score": 760111,
+      "grade": "B",
+      "perfect": 297,
+      "great": 42,
+      "good": 20,
+      "bad": 12,
+      "miss": 58,
+      "combo": 65,
+      "kcal": 25.224,
+      "performance": null,
+      "passStatus": "Unverified",
+      "cut": "Arcade",
+      "valid": true,
+      "selectionSecond": null,
+      "songIdentityVerified": true,
+      "sourcePoints": 900,
+      "sourceEvidence": "",
+      "verification": "Player CSV",
+      "sourceReference": {
+        "file": "AZUAAAAO_12_canciones_datos_completos.csv",
+        "row": 4
+      },
+      "reviewNote": null
+    },
+    {
+      "id": "ATT-00075",
+      "player": "PLY-0007",
+      "sourceSongId": 1061,
+      "songId": "pumpout:1061",
+      "sourceSongKey": "SONG-0036",
+      "sourceChartKey": "CHART-0039",
+      "song": "BLAZOR",
+      "mode": "Single",
+      "level": 11,
+      "score": 854288,
+      "grade": "A",
+      "perfect": 488,
+      "great": 35,
+      "good": 21,
+      "bad": 12,
+      "miss": 44,
+      "combo": 149,
+      "kcal": 27.125,
+      "performance": null,
+      "passStatus": "Unverified",
+      "cut": "Arcade",
+      "valid": true,
+      "selectionSecond": null,
+      "songIdentityVerified": true,
+      "sourcePoints": 825,
+      "sourceEvidence": "",
+      "verification": "Player CSV",
+      "sourceReference": {
+        "file": "AZUAAAAO_12_canciones_datos_completos.csv",
+        "row": 5
+      },
+      "reviewNote": null
+    },
+    {
+      "id": "ATT-00076",
+      "player": "PLY-0007",
+      "sourceSongId": 914,
+      "songId": "pumpout:914",
+      "sourceSongKey": "SONG-0069",
+      "sourceChartKey": "CHART-0074",
+      "song": "GOODTEK",
+      "mode": "Single",
+      "level": 12,
+      "score": 767910,
+      "grade": "B",
+      "perfect": 418,
+      "great": 53,
+      "good": 44,
+      "bad": 23,
+      "miss": 60,
+      "combo": 123,
+      "kcal": 32.431,
+      "performance": null,
+      "passStatus": "Unverified",
+      "cut": "Arcade",
+      "valid": true,
+      "selectionSecond": null,
+      "songIdentityVerified": true,
+      "sourcePoints": 900,
+      "sourceEvidence": "",
+      "verification": "Player CSV",
+      "sourceReference": {
+        "file": "AZUAAAAO_12_canciones_datos_completos.csv",
+        "row": 6
+      },
+      "reviewNote": null
+    },
+    {
+      "id": "ATT-00077",
+      "player": "PLY-0007",
+      "sourceSongId": 895,
+      "songId": "pumpout:895",
+      "sourceSongKey": "SONG-0070",
+      "sourceChartKey": "CHART-0075",
+      "song": "Re: End of a Dream",
+      "mode": "Single",
+      "level": 12,
+      "score": 871247,
+      "grade": "A",
+      "perfect": 500,
+      "great": 60,
+      "good": 18,
+      "bad": 12,
+      "miss": 28,
+      "combo": 67,
+      "kcal": 35.6,
+      "performance": null,
+      "passStatus": "Unverified",
+      "cut": "Arcade",
+      "valid": true,
+      "selectionSecond": null,
+      "songIdentityVerified": true,
+      "sourcePoints": 900,
+      "sourceEvidence": "",
+      "verification": "Player CSV",
+      "sourceReference": {
+        "file": "AZUAAAAO_12_canciones_datos_completos.csv",
+        "row": 7
+      },
+      "reviewNote": null
+    },
+    {
+      "id": "ATT-00078",
+      "player": "PLY-0007",
+      "sourceSongId": 911,
+      "songId": "pumpout:911",
+      "sourceSongKey": "SONG-0071",
+      "sourceChartKey": "CHART-0076",
+      "song": "Euphorianic",
+      "mode": "Single",
+      "level": 11,
+      "score": 819010,
+      "grade": "A",
+      "perfect": 419,
+      "great": 26,
+      "good": 19,
+      "bad": 15,
+      "miss": 56,
+      "combo": 94,
+      "kcal": 24.909,
+      "performance": null,
+      "passStatus": "Unverified",
+      "cut": "Arcade",
+      "valid": true,
+      "selectionSecond": null,
+      "songIdentityVerified": true,
+      "sourcePoints": 825,
+      "sourceEvidence": "",
+      "verification": "Player CSV",
+      "sourceReference": {
+        "file": "AZUAAAAO_12_canciones_datos_completos.csv",
+        "row": 8
+      },
+      "reviewNote": null
+    },
+    {
+      "id": "ATT-00079",
+      "player": "PLY-0007",
+      "sourceSongId": 949,
+      "songId": "pumpout:949",
+      "sourceSongKey": "SONG-0030",
+      "sourceChartKey": "CHART-0077",
+      "song": "PUPA",
+      "mode": "Single",
+      "level": 14,
+      "score": 784872,
+      "grade": "B",
+      "perfect": 514,
+      "great": 58,
+      "good": 18,
+      "bad": 15,
+      "miss": 98,
+      "combo": 127,
+      "kcal": 33.55,
+      "performance": null,
+      "passStatus": "Unverified",
+      "cut": "Arcade",
+      "valid": true,
+      "selectionSecond": null,
+      "songIdentityVerified": true,
+      "sourcePoints": 1050,
+      "sourceEvidence": "",
+      "verification": "Player CSV",
+      "sourceReference": {
+        "file": "AZUAAAAO_12_canciones_datos_completos.csv",
+        "row": 9
+      },
+      "reviewNote": null
+    },
+    {
+      "id": "ATT-00080",
+      "player": "PLY-0007",
+      "sourceSongId": 944,
+      "songId": "pumpout:944",
+      "sourceSongKey": "SONG-0072",
+      "sourceChartKey": "CHART-0078",
+      "song": "Viyella's Nightmare",
+      "mode": "Single",
+      "level": 11,
+      "score": 933513,
+      "grade": "AA",
+      "perfect": 508,
+      "great": 24,
+      "good": 8,
+      "bad": 5,
+      "miss": 15,
+      "combo": 178,
+      "kcal": 23.293,
+      "performance": "FAIR GAME",
+      "passStatus": "Unverified",
+      "cut": "Arcade",
+      "valid": true,
+      "selectionSecond": null,
+      "songIdentityVerified": true,
+      "sourcePoints": 1100,
+      "sourceEvidence": "",
+      "verification": "Player CSV",
+      "sourceReference": {
+        "file": "AZUAAAAO_12_canciones_datos_completos.csv",
+        "row": 10
+      },
+      "reviewNote": null
+    },
+    {
+      "id": "ATT-00081",
+      "player": "PLY-0007",
+      "sourceSongId": 938,
+      "songId": "pumpout:938",
+      "sourceSongKey": "SONG-0073",
+      "sourceChartKey": "CHART-0079",
+      "song": "Galaxy Collapse",
+      "mode": "Single",
+      "level": 11,
+      "score": 898532,
+      "grade": "A",
+      "perfect": 479,
+      "great": 21,
+      "good": 16,
+      "bad": 3,
+      "miss": 30,
+      "combo": 134,
+      "kcal": 22.095,
+      "performance": null,
+      "passStatus": "Unverified",
+      "cut": "Arcade",
+      "valid": true,
+      "selectionSecond": null,
+      "songIdentityVerified": true,
+      "sourcePoints": 825,
+      "sourceEvidence": "",
+      "verification": "Player CSV",
+      "sourceReference": {
+        "file": "AZUAAAAO_12_canciones_datos_completos.csv",
+        "row": 11
+      },
+      "reviewNote": null
+    },
+    {
+      "id": "ATT-00082",
+      "player": "PLY-0007",
+      "sourceSongId": 1073,
+      "songId": "pumpout:1073",
+      "sourceSongKey": "SONG-0074",
+      "sourceChartKey": "CHART-0080",
+      "song": "SUPER☆HARAGURO☆POP",
+      "mode": "Single",
+      "level": 12,
+      "score": 858520,
+      "grade": "A",
+      "perfect": 639,
+      "great": 43,
+      "good": 19,
+      "bad": 13,
+      "miss": 63,
+      "combo": 104,
+      "kcal": 30.63,
+      "performance": null,
+      "passStatus": "Unverified",
+      "cut": "Arcade",
+      "valid": true,
+      "selectionSecond": null,
+      "songIdentityVerified": true,
+      "sourcePoints": 900,
+      "sourceEvidence": "",
+      "verification": "Player CSV",
+      "sourceReference": {
+        "file": "AZUAAAAO_12_canciones_datos_completos.csv",
+        "row": 12
+      },
+      "reviewNote": null
+    },
+    {
+      "id": "ATT-00083",
+      "player": "PLY-0007",
+      "sourceSongId": 1070,
+      "songId": "pumpout:1070",
+      "sourceSongKey": "SONG-0075",
+      "sourceChartKey": "CHART-0081",
+      "song": "INFiNiTE ENERZY -Overdoze-",
+      "mode": "Single",
+      "level": 13,
+      "score": 731471,
+      "grade": "B",
+      "perfect": 515,
+      "great": 78,
+      "good": 30,
+      "bad": 26,
+      "miss": 128,
+      "combo": 161,
+      "kcal": 29.822,
+      "performance": null,
+      "passStatus": "Unverified",
+      "cut": "Arcade",
+      "valid": true,
+      "selectionSecond": null,
+      "songIdentityVerified": true,
+      "sourcePoints": 975,
+      "sourceEvidence": "",
+      "verification": "Player CSV",
+      "sourceReference": {
+        "file": "AZUAAAAO_12_canciones_datos_completos.csv",
+        "row": 13
+      },
       "reviewNote": null
     }
   ]

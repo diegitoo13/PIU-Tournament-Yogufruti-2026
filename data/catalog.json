@@ -4418,6 +4418,690 @@
       "artworkSource": "https://pumpout.anyhowstep.com/img/card/1510.png",
       "sourceCardPath": "/img/card/1510.png",
       "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "pumpout:826",
+      "sourceSongId": 826,
+      "title": "Cycling!",
+      "koreanTitle": null,
+      "gameIdentifier": "1683",
+      "artist": "Yamajet feat. あまね (COOL&CREATE)",
+      "bpmMin": 220.0,
+      "bpmMax": 220.0,
+      "cut": "Arcade",
+      "category": "XROSS",
+      "mainSeriesDebut": "XX v2.01.0",
+      "catalogVersion": "Phoenix 2 v1.02.0",
+      "charts": [
+        {
+          "sourceChartId": 6184,
+          "mode": "Single",
+          "level": 3,
+          "stepmaker": "MINAMI"
+        },
+        {
+          "sourceChartId": 6185,
+          "mode": "Single",
+          "level": 7,
+          "stepmaker": "MINAMI"
+        },
+        {
+          "sourceChartId": 6186,
+          "mode": "Single",
+          "level": 10,
+          "stepmaker": "MINAMI"
+        },
+        {
+          "sourceChartId": 6187,
+          "mode": "Single",
+          "level": 16,
+          "stepmaker": "MINAMI"
+        },
+        {
+          "sourceChartId": 6188,
+          "mode": "Single",
+          "level": 19,
+          "stepmaker": "MINAMI"
+        },
+        {
+          "sourceChartId": 6189,
+          "mode": "Double",
+          "level": 11,
+          "stepmaker": "MINAMI"
+        },
+        {
+          "sourceChartId": 6190,
+          "mode": "Double",
+          "level": 16,
+          "stepmaker": "MINAMI"
+        },
+        {
+          "sourceChartId": 6191,
+          "mode": "Double",
+          "level": 20,
+          "stepmaker": "MINAMI"
+        }
+      ],
+      "cover": "assets/songs/826-cover.webp",
+      "thumbnail": "assets/songs/826-thumb.webp",
+      "source": "https://github.com/aaaaaa2493/pumpout-db-updates",
+      "artworkSource": "https://pumpout.anyhowstep.com/img/card/1683.png",
+      "sourceCardPath": "/img/card/1683.png",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "pumpout:981",
+      "sourceSongId": 981,
+      "title": "Fracture Temporelle",
+      "koreanTitle": "프렉쳐 텀퍼렐르",
+      "gameIdentifier": "17XX_1007",
+      "artist": "Kurokotei",
+      "bpmMin": 232.0,
+      "bpmMax": 232.0,
+      "cut": "Arcade",
+      "category": "WORLD MUSIC",
+      "mainSeriesDebut": "Phoenix v2.01.0",
+      "catalogVersion": "Phoenix 2 v1.02.0",
+      "charts": [
+        {
+          "sourceChartId": 7638,
+          "mode": "Single",
+          "level": 9,
+          "stepmaker": "BME"
+        },
+        {
+          "sourceChartId": 7639,
+          "mode": "Single",
+          "level": 12,
+          "stepmaker": "BME"
+        },
+        {
+          "sourceChartId": 7640,
+          "mode": "Single",
+          "level": 15,
+          "stepmaker": "BME"
+        },
+        {
+          "sourceChartId": 7641,
+          "mode": "Single",
+          "level": 18,
+          "stepmaker": "BME"
+        },
+        {
+          "sourceChartId": 7642,
+          "mode": "Single",
+          "level": 21,
+          "stepmaker": "BME"
+        },
+        {
+          "sourceChartId": 7643,
+          "mode": "Single",
+          "level": 24,
+          "stepmaker": "BME"
+        },
+        {
+          "sourceChartId": 7644,
+          "mode": "Double",
+          "level": 18,
+          "stepmaker": "SUNNY"
+        },
+        {
+          "sourceChartId": 7645,
+          "mode": "Double",
+          "level": 23,
+          "stepmaker": "SUNNY"
+        },
+        {
+          "sourceChartId": 7646,
+          "mode": "Double",
+          "level": 26,
+          "stepmaker": "SUNNY"
+        }
+      ],
+      "cover": "assets/songs/981-cover.webp",
+      "thumbnail": "assets/songs/981-thumb.webp",
+      "source": "https://github.com/aaaaaa2493/pumpout-db-updates",
+      "artworkSource": "https://raw.githubusercontent.com/aaaaaa2493/pumpout-db-updates/68d8cc356e585244b1dafd73a23b8c3386e6e31f/img_big/Phoenix_Fracture_Temporelle.png",
+      "sourceCardPath": "/img/card/Phoenix_Fracture_Temporelle.png",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "pumpout:914",
+      "sourceSongId": 914,
+      "title": "GOODTEK",
+      "koreanTitle": "굿텍",
+      "gameIdentifier": "17XX_0013",
+      "artist": "EBIMAYO",
+      "bpmMin": 190.0,
+      "bpmMax": 190.0,
+      "cut": "Arcade",
+      "category": "WORLD MUSIC",
+      "mainSeriesDebut": "Phoenix v1.00.1",
+      "catalogVersion": "Phoenix 2 v1.02.0",
+      "charts": [
+        {
+          "sourceChartId": 7035,
+          "mode": "Single",
+          "level": 8,
+          "stepmaker": "FEFEMZ"
+        },
+        {
+          "sourceChartId": 7036,
+          "mode": "Single",
+          "level": 12,
+          "stepmaker": "FEFEMZ"
+        },
+        {
+          "sourceChartId": 7037,
+          "mode": "Single",
+          "level": 16,
+          "stepmaker": "FEFEMZ"
+        },
+        {
+          "sourceChartId": 7038,
+          "mode": "Single",
+          "level": 18,
+          "stepmaker": "FEFEMZ"
+        },
+        {
+          "sourceChartId": 7039,
+          "mode": "Single",
+          "level": 21,
+          "stepmaker": "FEFEMZ"
+        },
+        {
+          "sourceChartId": 7040,
+          "mode": "Double",
+          "level": 12,
+          "stepmaker": "FEFEMZ"
+        },
+        {
+          "sourceChartId": 7041,
+          "mode": "Double",
+          "level": 16,
+          "stepmaker": "FEFEMZ"
+        },
+        {
+          "sourceChartId": 7042,
+          "mode": "Double",
+          "level": 20,
+          "stepmaker": "FEFEMZ"
+        },
+        {
+          "sourceChartId": 7043,
+          "mode": "Double",
+          "level": 24,
+          "stepmaker": "FEFEMZ"
+        }
+      ],
+      "cover": "assets/songs/914-cover.webp",
+      "thumbnail": "assets/songs/914-thumb.webp",
+      "source": "https://github.com/aaaaaa2493/pumpout-db-updates",
+      "artworkSource": "https://raw.githubusercontent.com/aaaaaa2493/pumpout-db-updates/68d8cc356e585244b1dafd73a23b8c3386e6e31f/img_big/Phoenix_GOODTEK.png",
+      "sourceCardPath": "/img/card/Phoenix_GOODTEK.png",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "pumpout:895",
+      "sourceSongId": 895,
+      "title": "Re：End of a Dream",
+      "koreanTitle": null,
+      "gameIdentifier": "16B2",
+      "artist": "uma vs.  Morimori Atsushi",
+      "bpmMin": 212.0,
+      "bpmMax": 212.0,
+      "cut": "Arcade",
+      "category": "WORLD MUSIC",
+      "mainSeriesDebut": "XX v2.08.0",
+      "catalogVersion": "Phoenix 2 v1.02.0",
+      "charts": [
+        {
+          "sourceChartId": 6864,
+          "mode": "Single",
+          "level": 12,
+          "stepmaker": "FEFEMZ"
+        },
+        {
+          "sourceChartId": 6865,
+          "mode": "Single",
+          "level": 15,
+          "stepmaker": "FEFEMZ"
+        },
+        {
+          "sourceChartId": 6866,
+          "mode": "Single",
+          "level": 19,
+          "stepmaker": "FEFEMZ"
+        },
+        {
+          "sourceChartId": 6867,
+          "mode": "Single",
+          "level": 21,
+          "stepmaker": "FEFEMZ"
+        },
+        {
+          "sourceChartId": 6868,
+          "mode": "Single",
+          "level": 23,
+          "stepmaker": "FEFEMZ"
+        },
+        {
+          "sourceChartId": 6869,
+          "mode": "Double",
+          "level": 18,
+          "stepmaker": "FEFEMZ"
+        },
+        {
+          "sourceChartId": 6870,
+          "mode": "Double",
+          "level": 22,
+          "stepmaker": "FEFEMZ"
+        },
+        {
+          "sourceChartId": 6871,
+          "mode": "Double",
+          "level": 25,
+          "stepmaker": "FEFEMZ"
+        }
+      ],
+      "cover": "assets/songs/895-cover.webp",
+      "thumbnail": "assets/songs/895-thumb.webp",
+      "source": "https://github.com/aaaaaa2493/pumpout-db-updates",
+      "artworkSource": "https://pumpout.anyhowstep.com/img/card/16B2.png",
+      "sourceCardPath": "/img/card/16B2.png",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "pumpout:911",
+      "sourceSongId": 911,
+      "title": "Euphorianic",
+      "koreanTitle": "유포리아닉",
+      "gameIdentifier": "17XX_0010",
+      "artist": "SHK",
+      "bpmMin": 140.0,
+      "bpmMax": 140.0,
+      "cut": "Arcade",
+      "category": "ORIGINAL",
+      "mainSeriesDebut": "Phoenix v1.00.1",
+      "catalogVersion": "Phoenix 2 v1.02.0",
+      "charts": [
+        {
+          "sourceChartId": 7009,
+          "mode": "Single",
+          "level": 3,
+          "stepmaker": "CONRAD"
+        },
+        {
+          "sourceChartId": 7010,
+          "mode": "Single",
+          "level": 5,
+          "stepmaker": "CONRAD"
+        },
+        {
+          "sourceChartId": 7011,
+          "mode": "Single",
+          "level": 8,
+          "stepmaker": "CONRAD"
+        },
+        {
+          "sourceChartId": 7012,
+          "mode": "Single",
+          "level": 11,
+          "stepmaker": "CONRAD"
+        },
+        {
+          "sourceChartId": 7013,
+          "mode": "Single",
+          "level": 16,
+          "stepmaker": "CONRAD"
+        },
+        {
+          "sourceChartId": 7014,
+          "mode": "Single",
+          "level": 19,
+          "stepmaker": "CONRAD"
+        },
+        {
+          "sourceChartId": 7015,
+          "mode": "Double",
+          "level": 12,
+          "stepmaker": "CONRAD"
+        },
+        {
+          "sourceChartId": 7016,
+          "mode": "Double",
+          "level": 18,
+          "stepmaker": "CONRAD"
+        },
+        {
+          "sourceChartId": 7017,
+          "mode": "Double",
+          "level": 21,
+          "stepmaker": "CONRAD"
+        },
+        {
+          "sourceChartId": 8257,
+          "mode": "Double",
+          "level": 23,
+          "stepmaker": "refos"
+        }
+      ],
+      "cover": "assets/songs/911-cover.webp",
+      "thumbnail": "assets/songs/911-thumb.webp",
+      "source": "https://github.com/aaaaaa2493/pumpout-db-updates",
+      "artworkSource": "https://raw.githubusercontent.com/aaaaaa2493/pumpout-db-updates/68d8cc356e585244b1dafd73a23b8c3386e6e31f/img_big/Phoenix_Euphorianic.png",
+      "sourceCardPath": "/img/card/Phoenix_Euphorianic.png",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "pumpout:944",
+      "sourceSongId": 944,
+      "title": "Viyella's Nightmare",
+      "koreanTitle": "비옐라의 악몽",
+      "gameIdentifier": "17XX_0405",
+      "artist": "Laur",
+      "bpmMin": 220.0,
+      "bpmMax": 220.0,
+      "cut": "Arcade",
+      "category": "WORLD MUSIC",
+      "mainSeriesDebut": "Phoenix v1.04.0",
+      "catalogVersion": "Phoenix 2 v1.02.0",
+      "charts": [
+        {
+          "sourceChartId": 7291,
+          "mode": "Single",
+          "level": 11,
+          "stepmaker": "DulKi"
+        },
+        {
+          "sourceChartId": 7292,
+          "mode": "Single",
+          "level": 16,
+          "stepmaker": "DulKi"
+        },
+        {
+          "sourceChartId": 7293,
+          "mode": "Single",
+          "level": 19,
+          "stepmaker": "DulKi"
+        },
+        {
+          "sourceChartId": 7294,
+          "mode": "Single",
+          "level": 23,
+          "stepmaker": "DulKi"
+        },
+        {
+          "sourceChartId": 7295,
+          "mode": "Double",
+          "level": 14,
+          "stepmaker": "DulKi"
+        },
+        {
+          "sourceChartId": 7296,
+          "mode": "Double",
+          "level": 21,
+          "stepmaker": "DulKi"
+        },
+        {
+          "sourceChartId": 7297,
+          "mode": "Double",
+          "level": 25,
+          "stepmaker": "DulKi"
+        }
+      ],
+      "cover": "assets/songs/944-cover.webp",
+      "thumbnail": "assets/songs/944-thumb.webp",
+      "source": "https://github.com/aaaaaa2493/pumpout-db-updates",
+      "artworkSource": "https://raw.githubusercontent.com/aaaaaa2493/pumpout-db-updates/68d8cc356e585244b1dafd73a23b8c3386e6e31f/img_big/Phoenix_Viyellas_Nightmare.png",
+      "sourceCardPath": "/img/card/Phoenix_Viyellas_Nightmare.png",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "pumpout:938",
+      "sourceSongId": 938,
+      "title": "Galaxy Collapse",
+      "koreanTitle": "갤럭시 컬랩스",
+      "gameIdentifier": "17XX_0304",
+      "artist": "Kurokotei",
+      "bpmMin": 150.0,
+      "bpmMax": 320.0,
+      "cut": "Arcade",
+      "category": "WORLD MUSIC",
+      "mainSeriesDebut": "Phoenix v1.03.0",
+      "catalogVersion": "Phoenix 2 v1.02.0",
+      "charts": [
+        {
+          "sourceChartId": 7234,
+          "mode": "Single",
+          "level": 4,
+          "stepmaker": "SUNNY"
+        },
+        {
+          "sourceChartId": 7235,
+          "mode": "Single",
+          "level": 7,
+          "stepmaker": "SUNNY"
+        },
+        {
+          "sourceChartId": 7236,
+          "mode": "Single",
+          "level": 11,
+          "stepmaker": "SUNNY"
+        },
+        {
+          "sourceChartId": 7237,
+          "mode": "Single",
+          "level": 15,
+          "stepmaker": "SUNNY"
+        },
+        {
+          "sourceChartId": 7238,
+          "mode": "Single",
+          "level": 19,
+          "stepmaker": "SUNNY"
+        },
+        {
+          "sourceChartId": 7239,
+          "mode": "Single",
+          "level": 23,
+          "stepmaker": "SUNNY"
+        },
+        {
+          "sourceChartId": 7240,
+          "mode": "Double",
+          "level": 13,
+          "stepmaker": "SUNNY"
+        },
+        {
+          "sourceChartId": 7241,
+          "mode": "Double",
+          "level": 16,
+          "stepmaker": "SUNNY"
+        },
+        {
+          "sourceChartId": 7242,
+          "mode": "Double",
+          "level": 21,
+          "stepmaker": "SUNNY"
+        },
+        {
+          "sourceChartId": 7243,
+          "mode": "Double",
+          "level": 25,
+          "stepmaker": "SUNNY"
+        }
+      ],
+      "cover": "assets/songs/938-cover.webp",
+      "thumbnail": "assets/songs/938-thumb.webp",
+      "source": "https://github.com/aaaaaa2493/pumpout-db-updates",
+      "artworkSource": "https://raw.githubusercontent.com/aaaaaa2493/pumpout-db-updates/68d8cc356e585244b1dafd73a23b8c3386e6e31f/img_big/Phoenix_Galaxy_Collapse.png",
+      "sourceCardPath": "/img/card/Phoenix_Galaxy_Collapse.png",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "pumpout:1073",
+      "sourceSongId": 1073,
+      "title": "SUPER☆HARAGURO☆POP",
+      "koreanTitle": "슈퍼☆하라구로☆팝",
+      "gameIdentifier": "18XX_0019",
+      "artist": "Zekk",
+      "bpmMin": 160.0,
+      "bpmMax": 160.0,
+      "cut": "Arcade",
+      "category": "XROSS",
+      "mainSeriesDebut": "Phoenix 2 v1.00.0",
+      "catalogVersion": "Phoenix 2 v1.02.0",
+      "charts": [
+        {
+          "sourceChartId": 8426,
+          "mode": "Single",
+          "level": 4,
+          "stepmaker": "refos"
+        },
+        {
+          "sourceChartId": 8427,
+          "mode": "Single",
+          "level": 7,
+          "stepmaker": "refos"
+        },
+        {
+          "sourceChartId": 8428,
+          "mode": "Single",
+          "level": 10,
+          "stepmaker": "refos"
+        },
+        {
+          "sourceChartId": 8429,
+          "mode": "Single",
+          "level": 12,
+          "stepmaker": "refos"
+        },
+        {
+          "sourceChartId": 8430,
+          "mode": "Single",
+          "level": 16,
+          "stepmaker": "refos"
+        },
+        {
+          "sourceChartId": 8431,
+          "mode": "Single",
+          "level": 18,
+          "stepmaker": "refos"
+        },
+        {
+          "sourceChartId": 8432,
+          "mode": "Single",
+          "level": 20,
+          "stepmaker": "refos"
+        },
+        {
+          "sourceChartId": 8433,
+          "mode": "Single",
+          "level": 22,
+          "stepmaker": "refos"
+        },
+        {
+          "sourceChartId": 8434,
+          "mode": "Double",
+          "level": 17,
+          "stepmaker": "refos"
+        },
+        {
+          "sourceChartId": 8435,
+          "mode": "Double",
+          "level": 20,
+          "stepmaker": "refos"
+        },
+        {
+          "sourceChartId": 8436,
+          "mode": "Double",
+          "level": 22,
+          "stepmaker": "refos"
+        },
+        {
+          "sourceChartId": 8437,
+          "mode": "Double",
+          "level": 24,
+          "stepmaker": "refos"
+        }
+      ],
+      "cover": "assets/songs/1073-cover.webp",
+      "thumbnail": "assets/songs/1073-thumb.webp",
+      "source": "https://github.com/aaaaaa2493/pumpout-db-updates",
+      "artworkSource": "https://raw.githubusercontent.com/aaaaaa2493/pumpout-db-updates/68d8cc356e585244b1dafd73a23b8c3386e6e31f/img_big/Phoenix2_SUPERHARAGUROPOP.png",
+      "sourceCardPath": "/img/card/Phoenix2_SUPERHARAGUROPOP.png",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "pumpout:1070",
+      "sourceSongId": 1070,
+      "title": "INFiNiTE ENERZY -Overdoze-",
+      "koreanTitle": "인피니트 에너지 -Overdoze-",
+      "gameIdentifier": "18XX_0016",
+      "artist": "Reku Mochizuki",
+      "bpmMin": 180.0,
+      "bpmMax": 180.0,
+      "cut": "Arcade",
+      "category": "WORLD MUSIC",
+      "mainSeriesDebut": "Phoenix 2 v1.00.0",
+      "catalogVersion": "Phoenix 2 v1.02.0",
+      "charts": [
+        {
+          "sourceChartId": 8404,
+          "mode": "Single",
+          "level": 13,
+          "stepmaker": "refos"
+        },
+        {
+          "sourceChartId": 8405,
+          "mode": "Single",
+          "level": 16,
+          "stepmaker": "refos"
+        },
+        {
+          "sourceChartId": 8406,
+          "mode": "Single",
+          "level": 18,
+          "stepmaker": "refos"
+        },
+        {
+          "sourceChartId": 8407,
+          "mode": "Single",
+          "level": 21,
+          "stepmaker": "refos"
+        },
+        {
+          "sourceChartId": 8408,
+          "mode": "Single",
+          "level": 23,
+          "stepmaker": "refos"
+        },
+        {
+          "sourceChartId": 8409,
+          "mode": "Double",
+          "level": 19,
+          "stepmaker": "refos"
+        },
+        {
+          "sourceChartId": 8410,
+          "mode": "Double",
+          "level": 22,
+          "stepmaker": "refos"
+        },
+        {
+          "sourceChartId": 8411,
+          "mode": "Double",
+          "level": 25,
+          "stepmaker": "refos"
+        }
+      ],
+      "cover": "assets/songs/1070-cover.webp",
+      "thumbnail": "assets/songs/1070-thumb.webp",
+      "source": "https://github.com/aaaaaa2493/pumpout-db-updates",
+      "artworkSource": "https://raw.githubusercontent.com/aaaaaa2493/pumpout-db-updates/68d8cc356e585244b1dafd73a23b8c3386e6e31f/img_big/Phoenix2_INFiNiTE_ENERZY__Overdoze_.png",
+      "sourceCardPath": "/img/card/Phoenix2_INFiNiTE_ENERZY__Overdoze_.png",
+      "reviewedAt": "2026-11-01"
     }
   ]
 }

@@ -3,20 +3,27 @@
     "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
     "sha256": "8667c078986ac24b02342f7c49878b9fe1b1ec2637fbfa7573ea674113856e87"
   },
-  "additionalCsv": {
-    "file": "PIU_2026_Intentos_NUMI_12_corregidos.csv",
-    "sha256": "885d61cff947d8351949f45adcbc11505902df32ae886cbfdfae0bee7c6d9610"
-  },
+  "additionalCsvs": [
+    {
+      "file": "PIU_2026_Intentos_NUMI_12_corregidos.csv",
+      "sha256": "885d61cff947d8351949f45adcbc11505902df32ae886cbfdfae0bee7c6d9610"
+    },
+    {
+      "file": "AZUAAAAO_12_canciones_datos_completos.csv",
+      "sha256": "188f39a08ac83f7803ace18f2e5d173ef0ab4d1489782e05d878a2a79d31338f"
+    }
+  ],
   "importDate": "2026-11-01",
-  "playerCount": 6,
-  "attemptCount": 71,
+  "playerCount": 7,
+  "attemptCount": 83,
   "resultCounts": {
     "PLY-0001": 12,
     "PLY-0002": 12,
     "PLY-0003": 12,
     "PLY-0004": 12,
     "PLY-0005": 11,
-    "PLY-0006": 12
+    "PLY-0006": 12,
+    "PLY-0007": 12
   },
   "expectedWorkbookTotals": {
     "PLY-0001": 31580,

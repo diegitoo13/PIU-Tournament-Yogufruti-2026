@@ -8,22 +8,27 @@ English static scoreboard for the November 1, 2026 Pump It Up event at Yogufruti
 python3 -m http.server 8000
 node tests/scoring.test.js
 node tests/catalog.test.js
+node tests/result-display.test.js
 node --check app.js
 ```
 
-The site contains six players and 71 attempts, 61 identified songs with local covers and 512 current Single/Double chart records. Standings count the best eligible tournament points per player and canonical song. Search, player/level/mode filters and sorting persist in shareable URLs. Score tables reflow into cards on mobile. Three confirmed profile photos and the supplied event photos are included.
+The site contains seven players and 83 attempts, 70 identified songs with local covers and 593 current Single/Double chart records. Standings count the best eligible tournament points per player and canonical song. Search, player/level/mode filters and sorting persist in shareable URLs. Score tables reflow into cards on mobile. Three confirmed profile photos and the supplied event photos are included.
 
 ## Import results
 
 Install `openpyxl`, then run the read-only importer:
 
 ```sh
-python scripts/import_results.py /absolute/path/to/tournament.xlsx /absolute/path/to/additional-player.csv
+python scripts/import_results.py /absolute/path/to/tournament.xlsx /absolute/path/to/numi.csv /absolute/path/to/azua.csv
 ```
 
-It reads the normalized workbook tables (headers on row 6), upserts the optional CSV by attempt ID, and writes portable `data/results.json`, browser `data/results.js`, and an input hash manifest. The current inputs are `Torneo_PIU_2026_Resultados_5_Jugadores.xlsx` and `PIU_2026_Intentos_NUMI_12_corregidos.csv`. Source files are not modified or published. `data/workbook-song-map.json` contains reviewed canonical song mappings; `data/player-profiles.json` contains confirmed profile overrides. Review new mappings and player IDs before importing a different tournament.
+It reads the normalized workbook tables (headers on row 6), upserts the optional CSVs by attempt ID, and writes portable `data/results.json`, browser `data/results.js`, and an input hash manifest. The current inputs are `Torneo_PIU_2026_Resultados_5_Jugadores.xlsx` and `PIU_2026_Intentos_NUMI_12_corregidos.csv`, and `AZUAAAAO_12_canciones_datos_completos.csv`. Source files are not modified or published. `data/workbook-song-map.json` contains reviewed canonical song mappings; `data/player-profiles.json` contains confirmed profile overrides. Review new mappings and player IDs before importing a different tournament.
 
-`scoring.js` handles grade factors, eligibility, best-per-song deduplication and tied ranks. The tests reconcile every imported attempt's points and all five workbook totals, plus NUMI's 21,855-point total. DIEGITOO113 remains at 31,580 points, including full S23 points. Do not infer eligibility or game timing from image filenames or upload order.
+`scoring.js` handles grade factors, eligibility, best-per-song deduplication and tied ranks. The tests reconcile every imported attempt's points and all five workbook totals, plus NUMI's 21,855-point and AZUAAAAO's 11,075-point totals. DIEGITOO113 remains at 31,580 points, including full S23 points. Do not infer eligibility or game timing from image filenames or upload order.
+
+## Validate source data
+
+Run `python scripts/validate_results.py` with the same workbook and CSV arguments used for the import. It compares player, song and chart IDs, grades, judgments, scores, calories and source points against every source row, recording the outcome in `data/validation.json`. Result details identify the source file and row. Song details include each recorded player result and judgment counts.
 
 ## Missing data
 

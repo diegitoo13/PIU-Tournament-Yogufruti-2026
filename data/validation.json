@@ -1,0 +1,37 @@
+{
+  "reviewedAt": "2026-11-01",
+  "attemptCount": 83,
+  "comparedValues": 1411,
+  "completeJudgmentAttempts": 83,
+  "allSourceValuesMatch": true,
+  "differences": [],
+  "missingMachineValues": [
+    {
+      "attempt": "ATT-00057",
+      "player": "SOYASAUCE",
+      "song": "404 (New Era)",
+      "field": "score",
+      "sourceReference": {
+        "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+        "sheet": "Intentos",
+        "row": 63,
+        "range": "A63:AH63",
+        "judgmentRange": "K63:O63"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+      "sha256": "8667c078986ac24b02342f7c49878b9fe1b1ec2637fbfa7573ea674113856e87"
+    },
+    {
+      "file": "PIU_2026_Intentos_NUMI_12_corregidos.csv",
+      "sha256": "885d61cff947d8351949f45adcbc11505902df32ae886cbfdfae0bee7c6d9610"
+    },
+    {
+      "file": "AZUAAAAO_12_canciones_datos_completos.csv",
+      "sha256": "188f39a08ac83f7803ace18f2e5d173ef0ab4d1489782e05d878a2a79d31338f"
+    }
+  ]
+}

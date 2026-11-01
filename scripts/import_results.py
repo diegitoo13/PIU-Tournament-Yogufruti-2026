@@ -1,6 +1,6 @@
 """Import a normalized tournament workbook plus optional player CSV into the static site.
 Read-only input files. Re-running with the same IDs produces the same output.
-Usage: python scripts/import_results.py tournament.xlsx [additional-player.csv]
+Usage: python scripts/import_results.py tournament.xlsx [additional-player.csv ...]
 Requires openpyxl. Song identities are reviewed in data/workbook-song-map.json.
 """
 import csv
@@ -14,7 +14,7 @@ from openpyxl import load_workbook
 
 ROOT = Path(__file__).resolve().parents[1]
 workbook_path = Path(sys.argv[1]).resolve()
-csv_path = Path(sys.argv[2]).resolve() if len(sys.argv) > 2 else None
+csv_paths = [Path(arg).resolve() for arg in sys.argv[2:]]
 workbook = load_workbook(workbook_path, read_only=True, data_only=True)
 
 def table(name):
@@ -30,23 +30,32 @@ def table(name):
 raw_players = table('Jugadores')
 raw_songs = {record['song_id']: record for record in table('Canciones')}
 raw_attempts = {record['attempt_id']: record for record in table('Intentos')}
+source_references = {
+    row[0]: {'file':workbook_path.name, 'sheet':'Intentos', 'row':index, 'range':f'A{index}:AH{index}', 'judgmentRange':f'K{index}:O{index}'}
+    for index, row in enumerate(workbook['Intentos'].iter_rows(values_only=True), start=1)
+    if index > 6 and row and row[0]
+}
 expected_totals = {record['player_id']: record['puntos_totales'] for record in table('Ranking')}
-if csv_path:
-    for record in csv.DictReader(csv_path.open(encoding='utf-8-sig', newline='')):
+for csv_path in csv_paths:
+    for line, record in enumerate(csv.DictReader(csv_path.open(encoding='utf-8-sig', newline='')), start=2):
         for field in ['nivel','score_juego','perfect','great','good','bad','miss','combo_max','kcal','factor','puntos_base','puntos_intento','puntos_oficiales','seleccion_seg']:
             text = record.get(field)
             record[field] = float(text) if text not in [None,''] else None
             if record[field] is not None and record[field].is_integer():
                 record[field] = int(record[field])
         raw_attempts[record['attempt_id']] = record
+        source_references[record['attempt_id']] = {'file':csv_path.name, 'row':line}
         title = re.search(r'Título: (.*?)\. ', record.get('notas',''))
+        title = record.get('titulo_cancion') or (title.group(1) if title else None)
         if record['song_id'] not in raw_songs and title:
-            raw_songs[record['song_id']] = {'titulo_canonico': title.group(1)}
+            raw_songs[record['song_id']] = {'titulo_canonico': title}
     for player_id in sorted({record['player_id'] for record in raw_attempts.values()}):
         if not any(player['player_id'] == player_id for player in raw_players):
-            if player_id != 'PLY-0006':
+            player_names = {'PLY-0006':'NUMI', 'PLY-0007':'AZUAAAAO'}
+            if player_id not in player_names:
                 raise ValueError(f'Unknown player {player_id}; add a confirmed profile first')
-            raw_players.append({'player_id':player_id, 'gamer_tag':'NUMI', 'nombre_publico':'NUMI'})
+            name = player_names[player_id]
+            raw_players.append({'player_id':player_id, 'gamer_tag':name, 'nombre_publico':name})
 
 mapping = json.loads((ROOT/'data/workbook-song-map.json').read_text())
 profiles = json.loads((ROOT/'data/player-profiles.json').read_text())
@@ -85,7 +94,8 @@ for raw in raw_attempts.values():
         'selectionSecond':raw.get('seleccion_seg'),
         'songIdentityVerified':source_id is not None,
         'sourcePoints':raw.get('puntos_intento'), 'sourceEvidence':raw.get('foto_evidencia'),
-        'verification':'Player workbook' if not csv_path or raw['player_id']!='PLY-0006' else 'Corrected NUMI CSV',
+        'verification':'Player workbook' if source_references[raw['attempt_id']].get('sheet') else 'Player CSV',
+        'sourceReference':source_references[raw['attempt_id']],
         'reviewNote':None,
     }
     if not result['songIdentityVerified']:
@@ -93,13 +103,12 @@ for raw in raw_attempts.values():
     elif raw['player_id']=='PLY-0006' and raw['attempt_id'] in ['ATT-00068','ATT-00069']:
         result['reviewNote']='Assigned to NUMI by participant confirmation, although the source screenshot shows SPRADA’s game profile.'
     if raw['player_id']=='PLY-0001' and source_id==1033:
-        result['kcal']=45.044
-        result['reviewNote']='Calories: the supplied workbook says 43.044; the earlier readable score photo shows 45.044. Photo value retained pending reconciliation.'
+        result['reviewNote']='Calories follow the latest workbook: 43.044. An earlier photo transcription recorded 45.044; the workbook is the current source of record.'
     results.append(result)
 
 manifest = {
     'workbook': {'file':workbook_path.name, 'sha256':hashlib.sha256(workbook_path.read_bytes()).hexdigest()},
-    'additionalCsv':{'file':csv_path.name,'sha256':hashlib.sha256(csv_path.read_bytes()).hexdigest()} if csv_path else None,
+    'additionalCsvs':[{'file':path.name,'sha256':hashlib.sha256(path.read_bytes()).hexdigest()} for path in csv_paths],
     'importDate':'2026-11-01', 'playerCount':len(players), 'attemptCount':len(results),
     'resultCounts':dict(Counter(result['player'] for result in results)),
     'expectedWorkbookTotals':expected_totals,

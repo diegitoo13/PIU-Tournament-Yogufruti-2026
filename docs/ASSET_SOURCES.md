@@ -11,7 +11,7 @@ Reviewed November 1, 2026. All runtime images are local WebP files. The communit
 
 ## Downloaded artwork
 
-All 61 identified songs have exact database-matched artwork. Covers and thumbnails preserve proportions; source and derivative hashes are recorded in `data/asset-sources.json`. Three unidentified SOYASAUCE song records show N/A without substitute artwork.
+All 70 identified songs have exact database-matched artwork. Covers and thumbnails preserve proportions; source and derivative hashes are recorded in `data/asset-sources.json`. Three unidentified SOYASAUCE song records show N/A without substitute artwork.
 
 | Song | Source | Local cover | Source dimensions | Local bytes |
 | --- | --- | --- | --- | ---: |
@@ -76,6 +76,16 @@ All 61 identified songs have exact database-matched artwork. Covers and thumbnai
 | BEDLAM | [Source](https://pumpout.anyhowstep.com/img/card/15B5.png) | `assets/songs/646-cover.webp` | 250 × 188 | 3,604 |
 | STAGER | [Source](https://raw.githubusercontent.com/aaaaaa2493/pumpout-db-updates/68d8cc356e585244b1dafd73a23b8c3386e6e31f/img_big/Phoenix_STAGER.png) | `assets/songs/959-cover.webp` | 1280 × 720 | 21,490 |
 | The Quick Brown Fox Jumps Over The Lazy Dog | [Source](https://pumpout.anyhowstep.com/img/card/1510.png) | `assets/songs/686-cover.webp` | 250 × 188 | 13,920 |
+
+| Cycling! | [Source](https://pumpout.anyhowstep.com/img/card/1683.png) | `assets/songs/826-cover.webp` | 250 × 188 | 11,638 |
+| Fracture Temporelle | [Source](https://raw.githubusercontent.com/aaaaaa2493/pumpout-db-updates/68d8cc356e585244b1dafd73a23b8c3386e6e31f/img_big/Phoenix_Fracture_Temporelle.png) | `assets/songs/981-cover.webp` | 1920 × 1080 | 33,348 |
+| GOODTEK | [Source](https://raw.githubusercontent.com/aaaaaa2493/pumpout-db-updates/68d8cc356e585244b1dafd73a23b8c3386e6e31f/img_big/Phoenix_GOODTEK.png) | `assets/songs/914-cover.webp` | 1920 × 1080 | 38,788 |
+| Re：End of a Dream | [Source](https://pumpout.anyhowstep.com/img/card/16B2.png) | `assets/songs/895-cover.webp` | 250 × 188 | 12,278 |
+| Euphorianic | [Source](https://raw.githubusercontent.com/aaaaaa2493/pumpout-db-updates/68d8cc356e585244b1dafd73a23b8c3386e6e31f/img_big/Phoenix_Euphorianic.png) | `assets/songs/911-cover.webp` | 1920 × 1080 | 72,566 |
+| Viyella's Nightmare | [Source](https://raw.githubusercontent.com/aaaaaa2493/pumpout-db-updates/68d8cc356e585244b1dafd73a23b8c3386e6e31f/img_big/Phoenix_Viyellas_Nightmare.png) | `assets/songs/944-cover.webp` | 1280 × 720 | 55,974 |
+| Galaxy Collapse | [Source](https://raw.githubusercontent.com/aaaaaa2493/pumpout-db-updates/68d8cc356e585244b1dafd73a23b8c3386e6e31f/img_big/Phoenix_Galaxy_Collapse.png) | `assets/songs/938-cover.webp` | 1280 × 720 | 42,602 |
+| SUPER☆HARAGURO☆POP | [Source](https://raw.githubusercontent.com/aaaaaa2493/pumpout-db-updates/68d8cc356e585244b1dafd73a23b8c3386e6e31f/img_big/Phoenix2_SUPERHARAGUROPOP.png) | `assets/songs/1073-cover.webp` | 1920 × 1080 | 86,902 |
+| INFiNiTE ENERZY -Overdoze- | [Source](https://raw.githubusercontent.com/aaaaaa2493/pumpout-db-updates/68d8cc356e585244b1dafd73a23b8c3386e6e31f/img_big/Phoenix2_INFiNiTE_ENERZY__Overdoze_.png) | `assets/songs/1070-cover.webp` | 1920 × 1080 | 26,124 |
 
 Dream To Nightmare uses the exact legacy card `/img/card/135.png` referenced by the database, preserved without upscaling.
 

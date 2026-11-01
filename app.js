@@ -31,6 +31,17 @@
     return `<dl class="${className}">${items.map(([label, value]) => `<div><dt>${escape(label)}</dt><dd>${escape(value ?? 'N/A')}</dd></div>`).join('')}</dl>`;
   }
 
+  function recordedResult(attempt) {
+    return `<button class="profile-result recorded-result" data-attempt="${escape(attempt.id)}"><span><strong>${escape(playerFor(attempt.player)?.name)}</strong><small>${chartName(attempt)} · ${escape(attempt.grade)} · Score ${number(attempt.score)}</small><span class="judgment-counts">${['perfect','great','good','bad','miss'].map(field => `<span>${field[0].toUpperCase() + field.slice(1)} <b>${number(attempt[field])}</b></span>`).join('')}</span></span><b>${number(calc.points(attempt, data.event))} <small>pts ↗</small></b></button>`;
+  }
+
+  function sourceReference(attempt) {
+    const source = attempt.sourceReference;
+    if (!source) return '';
+    const location = source.sheet ? `${source.sheet}!${source.range} · Judgments ${source.judgmentRange}` : `CSV row ${source.row}`;
+    return `<div class="result-source"><strong>Result data source</strong><span>${escape(source.file)}</span><span>${escape(location)}</span><a href="data/validation.json" target="_blank" rel="noopener">Source validation report ↗</a></div>`;
+  }
+
   function showDialog(content) {
     const wasOpen = $('detail-dialog').open;
     if (!wasOpen) returnFocus = document.activeElement;
@@ -68,6 +79,7 @@
       ])}
       <div class="formula">${attempt.level} × 100 × ${calc.factors[attempt.grade].toFixed(2)} = <b>${number(points)} tournament points</b></div>
       <div class="detail-note">${escape(attempt.reviewNote || 'Results are provisional. N/A marks an unverified or unavailable value.')}</div>
+      ${sourceReference(attempt)}
       ${song ? `<div class="source-links"><a href="${escape(song.source)}" target="_blank" rel="noopener noreferrer">Phoenix 2 catalog source ↗</a><a href="${escape(song.artworkSource)}" target="_blank" rel="noopener noreferrer">Artwork source ↗</a></div>` : ''}
     `);
   }
@@ -83,6 +95,7 @@
       ${image(song, true)}${songMetadata(song)}
       <div class="chart-list">${['Single', 'Double'].map(mode => `<div><h3>${mode.toUpperCase()}</h3><div class="chart-chips">${song.charts.filter(chart => chart.mode === mode).map(chart => `<span class="chart ${mode === 'Double' ? 'double-chart' : ''}" title="Chart author: ${escape(chart.stepmaker ?? 'Unverified')}">${chartName(chart)}</span>`).join('')}</div></div>`).join('')}</div>
       ${fields([['Recorded plays', plays.length], ['Best machine score', bestScore ? number(bestScore) : 'N/A'], ['Best tournament points', number(bestPoints)]])}
+      <section class="song-results"><h3>RECORDED RESULTS</h3><p>Perfect, Great, Good, Bad and Miss belong to each player's attempt. Select a result for combo, calories and its source row.</p>${plays.map(recordedResult).join('') || '<p>No recorded results.</p>'}</section>
       <div class="detail-note">Chart list: ${escape(song.catalogVersion)} · Community catalog. Chart authors appear when available. Song duration and note counts are not verified.</div>
       <div class="source-links"><a href="${escape(song.source)}" target="_blank" rel="noopener noreferrer">Metadata source ↗</a><a href="${escape(song.artworkSource)}" target="_blank" rel="noopener noreferrer">Artwork source ↗</a></div>
     `);
@@ -106,7 +119,7 @@
   $('score-count').textContent = number(counted.length);
   $('max-level').textContent = counted.length ? chartName(counted.reduce((a, b) => a.result.level > b.result.level ? a : b).result) : 'N/A';
   $('top-total').textContent = number(standings[0]?.total);
-  $('coverage').textContent = `${data.results.filter(attempt => attempt.score != null).length}/${data.results.length} machine scores available · ${data.results.filter(attempt => !attempt.songIdentityVerified).length} song titles pending`;
+  $('coverage').textContent = `${data.results.filter(attempt => ['perfect','great','good','bad','miss'].every(field => attempt[field] != null)).length}/${data.results.length} complete judgment sets · ${data.results.filter(attempt => attempt.score == null).length} unreadable machine score · ${data.results.filter(attempt => !attempt.songIdentityVerified).length} song titles pending`;
   data.players.forEach(player => $('player-filter').add(new Option(player.name, player.id)));
   $('standings-body').innerHTML = standings.map(row => `
     <tr><td class="rank">${String(row.rank).padStart(2, '0')}</td>
