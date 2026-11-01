@@ -25,3 +25,7 @@ button{color:inherit}.event-subtitle{display:block;margin-top:10px;font-size:10p
   .event-head h1{font-size:23px;letter-spacing:-.2px}
   .event-head p{font-size:12px;line-height:1.5}
 }
+
+/* Confirmed player portraits and unavailable source values */
+.avatar{overflow:hidden}.avatar img{display:block;width:100%;height:100%;object-fit:cover}.profile-avatar{width:86px;height:86px;border-radius:6px}.player-detail-heading{align-items:center;justify-content:flex-start;gap:16px}.player-status{display:block;color:var(--muted);font-size:10px;font-weight:400;text-align:left}.cover-na{display:grid;place-items:center;color:var(--muted);font-size:10px}.unidentified-cover{padding:26px 18px;background:#12161e;border-top:1px solid var(--line);border-bottom:1px solid var(--line);color:var(--muted);font-size:12px}.filters select{max-width:185px}.filters .search{min-width:180px}.filters{flex-wrap:wrap}
+@media(max-width:700px){.filters{grid-template-columns:repeat(2,minmax(0,1fr))}.filters select{max-width:none}.profile-avatar{width:65px;height:65px}.player-detail-heading{gap:12px}.player-detail-heading h2{font-size:20px}.topbar nav{gap:8px}}

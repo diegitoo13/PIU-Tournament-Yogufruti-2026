@@ -1,4 +1,4 @@
-"""Build the site's 12-song catalog from a local Pumpout Phoenix 2 v1.02 DB.
+"""Build the site's mapped song catalog from a local Pumpout Phoenix 2 v1.02 DB.
 Usage: python3 scripts/import_catalog.py /absolute/path/to/source-directory
 The directory must contain phoenix-2-1.02.db and the exact card filenames.
 Requires Pillow for web image optimization. Network fetching is intentionally separate.
@@ -16,7 +16,8 @@ DB = SOURCE / 'phoenix-2-1.02.db'
 COMMIT = '68d8cc356e585244b1dafd73a23b8c3386e6e31f'
 REPO = 'https://github.com/aaaaaa2493/pumpout-db-updates'
 VERSION = 202
-IDS = [1033, 947, 1082, 1032, 1030, 1024, 952, 208, 1102, 1022, 1007, 1065]
+IDS = list(dict.fromkeys(value for value in json.loads((ROOT/'data/workbook-song-map.json').read_text()).values() if value is not None))
+CARD_SOURCES = json.loads((SOURCE/'card_sources.json').read_text()) if (SOURCE/'card_sources.json').exists() else {}
 DATE = '2026-11-01'
 c = sqlite3.connect(DB)
 c.row_factory = sqlite3.Row
@@ -74,7 +75,7 @@ for song_id in IDS:
         for size,label in [(320,'thumb'),(960,'cover')]:
             out=image.copy();out.thumbnail((size,size),Image.Resampling.LANCZOS)
             out.save(ROOT/f'assets/songs/{song_id}-{label}.webp', 'WEBP', quality=85, method=6)
-    source_url = ('https://pumpout.anyhowstep.com'+card) if song_id == 208 else f'https://raw.githubusercontent.com/aaaaaa2493/pumpout-db-updates/{COMMIT}/img_big/{filename}'
+    source_url = CARD_SOURCES.get(filename) or (('https://pumpout.anyhowstep.com'+card) if song_id == 208 else f'https://raw.githubusercontent.com/aaaaaa2493/pumpout-db-updates/{COMMIT}/img_big/{filename}')
     item = {'id':f'pumpout:{song_id}', 'sourceSongId':song_id, 'title':song['internalTitle'], 'koreanTitle':korean_title, 'gameIdentifier':game_identifier, 'artist':artist, **bpm, 'cut':song['cut'], 'category':category, 'mainSeriesDebut':f"{addition['mix']} {addition['version']}" if addition else None, 'catalogVersion':'Phoenix 2 v1.02.0', 'charts':charts, 'cover':f'assets/songs/{song_id}-cover.webp', 'thumbnail':f'assets/songs/{song_id}-thumb.webp', 'source':REPO, 'artworkSource':source_url, 'sourceCardPath':card, 'reviewedAt':DATE}
     songs.append(item)
     local = ROOT/item['cover']

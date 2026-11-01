@@ -1,0 +1,40 @@
+{
+  "workbook": {
+    "file": "Torneo_PIU_2026_Resultados_5_Jugadores.xlsx",
+    "sha256": "8667c078986ac24b02342f7c49878b9fe1b1ec2637fbfa7573ea674113856e87"
+  },
+  "additionalCsv": {
+    "file": "PIU_2026_Intentos_NUMI_12_corregidos.csv",
+    "sha256": "885d61cff947d8351949f45adcbc11505902df32ae886cbfdfae0bee7c6d9610"
+  },
+  "importDate": "2026-11-01",
+  "playerCount": 6,
+  "attemptCount": 71,
+  "resultCounts": {
+    "PLY-0001": 12,
+    "PLY-0002": 12,
+    "PLY-0003": 12,
+    "PLY-0004": 12,
+    "PLY-0005": 11,
+    "PLY-0006": 12
+  },
+  "expectedWorkbookTotals": {
+    "PLY-0001": 31580,
+    "PLY-0002": 29705,
+    "PLY-0003": 23930,
+    "PLY-0004": 14010,
+    "PLY-0005": 25365
+  },
+  "unresolvedSongKeys": [
+    "SONG-0046",
+    "SONG-0047",
+    "SONG-0053"
+  ],
+  "corrections": [
+    "SPRADA photo identified explicitly by organizer",
+    "83 corrected to B3 by organizer",
+    "Ghost Bloody Train 995092 is already ATT-00059; not duplicated",
+    "Readable SOYASAUCE photos used to recover seven song identities",
+    "NUMI KUGUTSU source alias shares the canonical song ID with the existing catalog"
+  ]
+}

@@ -1,48 +1,44 @@
 # West Side Tournament 2026 — Yogufruti PIU scoreboard
 
-English-language static scoreboard for the November 1, 2026 Pump It Up event at Yogufruti in Aguadilla, Puerto Rico. Built for GitHub Pages, with no runtime dependencies or build step.
+English static scoreboard for the November 1, 2026 Pump It Up event at Yogufruti in Aguadilla, Puerto Rico. Live at https://piu.kazza.jp. GitHub Pages serves `main` from the repository root; no build step or runtime dependencies.
 
-## Run and publish
-
-Run `python3 -m http.server 8000` in this directory, then open `http://localhost:8000`. To publish, push the files to GitHub and select the appropriate branch and `/ (root)` in **Settings → Pages**. All paths are relative, including images, so project subpaths are supported. `.nojekyll` disables unnecessary Jekyll processing. The custom domain is `piu.kazza.jp`; the root `CNAME` file preserves it when GitHub Pages publishes from the branch.
-
-## Included
-
-- Provisional official standings, calculated from the best eligible points per player and song.
-- Searchable result table that reflows into cards on mobile; combined level/mode filters, sorting and shareable filter query parameters.
-- Score details with the tournament calculation, judgments and available machine score.
-- Player details and placeholders for pending profile data.
-- Twelve local song covers and a searchable catalog containing title, artist, BPM, Korean title, game identifier, cut, category, main-series debut, current charts and chart authors.
-- User-supplied player group photo, invitation and finisher medal.
-
-The original invitation and medal identify the event as **West Side Tournament**. The existing Yogufruti project name and repository are preserved.
-
-## Tests
+## Run and validate
 
 ```sh
+python3 -m http.server 8000
 node tests/scoring.test.js
 node tests/catalog.test.js
 node --check app.js
 ```
 
-The scoring fixture must remain 12 counted songs, 31,580 points and maximum S23. See [the audit](docs/AUDIT.md) for findings, corrections and remaining gaps.
+The site contains six players and 71 attempts, 61 identified songs with local covers and 512 current Single/Double chart records. Standings count the best eligible tournament points per player and canonical song. Search, player/level/mode filters and sorting persist in shareable URLs. Score tables reflow into cards on mobile. Three confirmed profile photos and the supplied event photos are included.
 
-## Data and scoring
+## Import results
 
-`data/results.js` is the current provisional seed; `data/catalog.js` is the browser catalog and `data/catalog.json` is its portable JSON counterpart. `scoring.js` handles eligibility, points, per-song deduplication and tied standings. The event's minimum/maximum difficulty and selection window are configurable. A null maximum means uncapped. Unknown timing and pass/break fields remain unverified, and initial eligibility follows the supplied handoff.
+Install `openpyxl`, then run the read-only importer:
 
-The complete workbook and starter pack are still needed to reconcile their stable IDs and fill six missing machine scores and judgment sets. The site does not currently import Excel, save admin edits or upload images. GitHub Pages can host an offline import-and-publish workflow; persistent shared administration requires a separate backend. Do not add a password in browser JavaScript and claim it protects administrative actions.
+```sh
+python scripts/import_results.py /absolute/path/to/tournament.xlsx /absolute/path/to/additional-player.csv
+```
 
-## Rebuild song metadata and covers
+It reads the normalized workbook tables (headers on row 6), upserts the optional CSV by attempt ID, and writes portable `data/results.json`, browser `data/results.js`, and an input hash manifest. The current inputs are `Torneo_PIU_2026_Resultados_5_Jugadores.xlsx` and `PIU_2026_Intentos_NUMI_12_corregidos.csv`. Source files are not modified or published. `data/workbook-song-map.json` contains reviewed canonical song mappings; `data/player-profiles.json` contains confirmed profile overrides. Review new mappings and player IDs before importing a different tournament.
 
-`scripts/import_catalog.py` reads the Phoenix 2 v1.02.0 SQLite schema and selects the latest applicable records along its version ancestry, excluding removed charts. It matches explicit song IDs, never guesses artwork filenames from titles. Input is a local source directory containing `phoenix-2-1.02.db` and the exact card files listed in the database. Install Pillow in a virtual environment, then run:
+`scoring.js` handles grade factors, eligibility, best-per-song deduplication and tied ranks. The tests reconcile every imported attempt's points and all five workbook totals, plus NUMI's 21,855-point total. DIEGITOO113 remains at 31,580 points, including full S23 points. Do not infer eligibility or game timing from image filenames or upload order.
+
+## Missing data
+
+SOYASAUCE has 11 supplied attempts, including the final Ghost Bloody Train photo already recorded as ATT-00059. Three song identities remain N/A; their supplied points are provisional pending identity and duplicate review. One machine score is unreadable. Missing values are shown as N/A; unverified timing and pass/break status remain explicit. Other player portraits use initials. No location, duration, note count or exact timestamp is invented. See `docs/AUDIT.md`.
+
+## Rebuild metadata and covers
+
+Install Pillow and run:
 
 ```sh
 python scripts/import_catalog.py /absolute/path/to/source-directory
 ```
 
-The source is [Pumpout DB Updates](https://github.com/aaaaaa2493/pumpout-db-updates), pinned to commit `68d8cc356e585244b1dafd73a23b8c3386e6e31f`; Dream To Nightmare uses its legacy Pump Out card. Source files, URLs, attribution and hashes are recorded in [the asset inventory](docs/ASSET_SOURCES.md) and `data/asset-sources.json`. Artwork remains with its respective rights holders; no open artwork license is asserted.
+The directory contains `phoenix-2-1.02.db`, exact database card filenames and optionally `card_sources.json` with their verified URLs. The script selects current charts along the Phoenix 2 v1.02.0 version ancestry and creates optimized local covers and thumbnails. The database and images come from [Pumpout DB Updates](https://github.com/aaaaaa2493/pumpout-db-updates), pinned to commit `68d8cc356e585244b1dafd73a23b8c3386e6e31f`; Dream To Nightmare uses its exact legacy Pump Out card. Attribution and hashes are in `data/asset-sources.json` and `docs/ASSET_SOURCES.md`.
 
-## Missing fields
+## Publishing and domain
 
-Missing values are displayed as placeholders. The group photo is not used to infer names, home towns or player results. Individual images and gamer tags can be attached later. No song duration, note count or game timestamp is invented.
+Commit and push to `main` to deploy. `.nojekyll` disables Jekyll; `CNAME` preserves `piu.kazza.jp`. DNS uses only the `piu` subdomain CNAME pointing to `diegitoo13.github.io`. Existing root-domain and other subdomain records are unchanged. The site is static; editing shared results or uploading new data requires the offline import-and-publish workflow or a separate authenticated backend.

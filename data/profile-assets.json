@@ -1,0 +1,29 @@
+[
+  {
+    "player": "diegitoo113",
+    "localPath": "assets/players/diegitoo113.webp",
+    "sourceFilename": "IMG_4096.jpg",
+    "sourceSha256": "0cff8f6d52cb12ae19baf4ee662aa0bcc0af2a029ecfd701368e1e96f7f87eb9",
+    "localSha256": "33375a96b4f11ea28125bb6648c469dddefa563261383e5646c64ef1d68785cd",
+    "localBytes": 34510,
+    "identity": "Explicitly confirmed by organizer"
+  },
+  {
+    "player": "ghost",
+    "localPath": "assets/players/ghost.webp",
+    "sourceFilename": "codex-clipboard-3eaf1634-6084-40b3-9286-1fdbde5aa16f.png",
+    "sourceSha256": "d9fe1f855770ea6dacd3ff4414ad3c6633de02f9065e0631a60647a220137646",
+    "localSha256": "84aa4a42509395484eaf11705b1e332d9a3c3fa32acc98bf7f05aaffa4118f03",
+    "localBytes": 105124,
+    "identity": "Explicitly confirmed by organizer"
+  },
+  {
+    "player": "sprada",
+    "localPath": "assets/players/sprada.webp",
+    "sourceFilename": "codex-clipboard-d289aada-bb3a-4a47-abf0-1660ae063e48.png",
+    "sourceSha256": "65af72e3de62db264f3c042500f161bd750f2fd7f0dbc2016369695ad3951df2",
+    "localSha256": "86ef60600625232d8d42c65ce095120183308a5b54fa62ddc33d73c050f875c1",
+    "localBytes": 88524,
+    "identity": "Explicitly confirmed by organizer"
+  }
+]

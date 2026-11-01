@@ -4,7 +4,7 @@
   const catalog = window.PHOENIX_CATALOG;
   const calc = window.PIUScore;
   const $ = id => document.getElementById(id);
-  const number = value => value == null ? '—' : new Intl.NumberFormat('en-US').format(value);
+  const number = value => value == null ? 'N/A' : new Intl.NumberFormat('en-US').format(value);
   const escape = value => String(value ?? '').replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
   const normalize = value => String(value).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
   const playerFor = id => data.players.find(player => player.id === id);
@@ -18,12 +18,17 @@
   const params = new URLSearchParams(location.search);
   let returnFocus = null;
 
+  function avatar(player, large = false) {
+    const photo = player.photo ? `<img src="${escape(player.photo)}" alt="${escape(player.name)} profile photo" style="object-position:${escape(player.photoPosition || '50% 50%')}" loading="lazy">` : escape(player.name.slice(0, 2));
+    return `<span class="avatar${large ? ' profile-avatar' : ''}">${photo}</span>`;
+  }
+
   function image(song, large = false) {
     return `<span class="cover-wrap${large ? ' large-cover' : ''}"><img src="${escape(large ? song.cover : song.thumbnail)}" alt="${escape(song.title)} song artwork" loading="lazy" decoding="async"></span>`;
   }
 
   function fields(items, className = 'detail-grid') {
-    return `<dl class="${className}">${items.map(([label, value]) => `<div><dt>${escape(label)}</dt><dd>${escape(value ?? '—')}</dd></div>`).join('')}</dl>`;
+    return `<dl class="${className}">${items.map(([label, value]) => `<div><dt>${escape(label)}</dt><dd>${escape(value ?? 'N/A')}</dd></div>`).join('')}</dl>`;
   }
 
   function showDialog(content) {
@@ -52,16 +57,17 @@
     const points = calc.points(attempt, data.event);
     showDialog(`
       <div class="detail-top"><span class="section-number">RESULT / ${escape(attempt.id.toUpperCase())}</span><h2 id="detail-title">${escape(titleFor(attempt))}</h2><p>${escape(playerFor(attempt.player)?.name)}</p></div>
-      ${song ? image(song, true) : ''}
-      <div class="detail-summary"><span class="chart">${chartName(attempt)}</span><span class="grade">${escape(attempt.grade)}</span><strong>${number(points)} pts</strong><span class="counted-label">${countedIds.has(attempt.id) ? 'COUNTED' : 'NOT COUNTED'}</span></div>
+      ${song ? image(song, true) : '<div class="unidentified-cover">Artwork N/A · song title pending</div>'}
+      <div class="detail-summary"><span class="chart ${attempt.mode === 'Double' ? 'double-chart' : ''}">${chartName(attempt)}</span><span class="grade">${escape(attempt.grade)}</span><strong>${number(points)} pts</strong><span class="counted-label">${countedIds.has(attempt.id) ? 'COUNTED' : 'NOT COUNTED'}</span></div>
       ${song ? songMetadata(song, attempt) : ''}
       ${fields([
         ['Perfect', number(attempt.perfect)], ['Great', number(attempt.great)], ['Good', number(attempt.good)],
         ['Bad', number(attempt.bad)], ['Miss', number(attempt.miss)], ['Max combo', number(attempt.combo)],
         ['Calories', number(attempt.kcal)], ['Machine score', number(attempt.score)], ['Pass / break', attempt.passStatus],
+        ['Performance', attempt.performance], ['Selected at (seconds)', number(attempt.selectionSecond)],
       ])}
       <div class="formula">${attempt.level} × 100 × ${calc.factors[attempt.grade].toFixed(2)} = <b>${number(points)} tournament points</b></div>
-      <div class="detail-note">Missing values are unverified. Results are provisional and transcribed from the tournament handoff.</div>
+      <div class="detail-note">${escape(attempt.reviewNote || 'Results are provisional. N/A marks an unverified or unavailable value.')}</div>
       ${song ? `<div class="source-links"><a href="${escape(song.source)}" target="_blank" rel="noopener noreferrer">Phoenix 2 catalog source ↗</a><a href="${escape(song.artworkSource)}" target="_blank" rel="noopener noreferrer">Artwork source ↗</a></div>` : ''}
     `);
   }
@@ -76,7 +82,7 @@
       <div class="detail-top"><span class="section-number">SONG / PHOENIX 2</span><h2 id="detail-title">${escape(song.title)}</h2><p>${escape(song.artist)}</p></div>
       ${image(song, true)}${songMetadata(song)}
       <div class="chart-list">${['Single', 'Double'].map(mode => `<div><h3>${mode.toUpperCase()}</h3><div class="chart-chips">${song.charts.filter(chart => chart.mode === mode).map(chart => `<span class="chart ${mode === 'Double' ? 'double-chart' : ''}" title="Chart author: ${escape(chart.stepmaker ?? 'Unverified')}">${chartName(chart)}</span>`).join('')}</div></div>`).join('')}</div>
-      ${fields([['Recorded plays', plays.length], ['Best machine score', bestScore ? number(bestScore) : '—'], ['Best tournament points', number(bestPoints)]])}
+      ${fields([['Recorded plays', plays.length], ['Best machine score', bestScore ? number(bestScore) : 'N/A'], ['Best tournament points', number(bestPoints)]])}
       <div class="detail-note">Chart list: ${escape(song.catalogVersion)} · Community catalog. Chart authors appear when available. Song duration and note counts are not verified.</div>
       <div class="source-links"><a href="${escape(song.source)}" target="_blank" rel="noopener noreferrer">Metadata source ↗</a><a href="${escape(song.artworkSource)}" target="_blank" rel="noopener noreferrer">Artwork source ↗</a></div>
     `);
@@ -89,8 +95,8 @@
     const plays = data.results.filter(attempt => attempt.player === id);
     const grades = plays.reduce((all, attempt) => ({ ...all, [attempt.grade]: (all[attempt.grade] ?? 0) + 1 }), {});
     showDialog(`
-      <div class="detail-top"><span class="section-number">PLAYER PROFILE</span><h2 id="detail-title">${escape(player.name)}</h2><p>${escape(player.publicName ?? '')}</p></div>
-      ${fields([['Tournament points', number(standing?.total)], ['Counted songs', standing?.plays.length ?? 0], ['Location', [player.location, player.country].filter(Boolean).join(', ') || 'Not provided']])}
+      <div class="detail-top player-detail-heading">${avatar(player, true)}<div><span class="section-number">PLAYER PROFILE</span><h2 id="detail-title">${escape(player.name)}</h2><p>${escape(player.publicName === player.name ? '' : player.publicName ?? '')}</p></div></div>
+      ${fields([['Tournament points', number(standing?.total)], ['Counted songs', standing?.plays.length ?? 0], ['Location', [player.location, player.country].filter(Boolean).join(', ') || 'N/A']])}
       <div class="profile-grades">${Object.entries(grades).map(([grade, count]) => `<span><b>${escape(grade)}</b> ${count}</span>`).join('')}</div>
       <div class="profile-results">${plays.map(attempt => `<button class="profile-result" data-attempt="${escape(attempt.id)}"><span>${escape(titleFor(attempt))}<small>${chartName(attempt)} · ${escape(attempt.grade)}</small></span><b>${number(calc.points(attempt, data.event))} <small>pts ↗</small></b></button>`).join('')}</div>
     `);
@@ -98,17 +104,18 @@
 
   $('player-count').textContent = number(data.players.length);
   $('score-count').textContent = number(counted.length);
-  $('max-level').textContent = counted.length ? chartName(counted.reduce((a, b) => a.result.level > b.result.level ? a : b).result) : '—';
+  $('max-level').textContent = counted.length ? chartName(counted.reduce((a, b) => a.result.level > b.result.level ? a : b).result) : 'N/A';
   $('top-total').textContent = number(standings[0]?.total);
-  $('coverage').textContent = `${data.results.filter(attempt => attempt.score != null).length}/${data.results.length} detailed machine results · ${catalog.songs.length}/${catalog.songs.length} song covers`;
+  $('coverage').textContent = `${data.results.filter(attempt => attempt.score != null).length}/${data.results.length} machine scores available · ${data.results.filter(attempt => !attempt.songIdentityVerified).length} song titles pending`;
+  data.players.forEach(player => $('player-filter').add(new Option(player.name, player.id)));
   $('standings-body').innerHTML = standings.map(row => `
     <tr><td class="rank">${String(row.rank).padStart(2, '0')}</td>
-    <td><button class="player-cell" data-player="${escape(row.player.id)}"><span class="avatar">${escape(row.player.name.slice(0, 2))}</span>${escape(row.player.name)}</button></td>
+    <td><button class="player-cell" data-player="${escape(row.player.id)}">${avatar(row.player)}<span>${escape(row.player.name)}${row.player.resultStatus === 'provisional' ? '<small class="player-status">Song titles pending</small>' : ''}</span></button></td>
     <td>${row.plays.length}</td><td>${chartName(row.plays.reduce((a, b) => a.result.level > b.result.level ? a : b).result)}</td>
     <td class="numeric points">${number(row.total)}</td></tr>`).join('');
 
   [...new Set(data.results.map(attempt => attempt.level))].sort((a, b) => b - a).forEach(level => $('level').add(new Option(`Level ${level}`, level)));
-  ['search', 'level', 'mode', 'sort'].forEach(id => {
+  ['search', 'player-filter', 'level', 'mode', 'sort'].forEach(id => {
     const value = params.get(id);
     if (value != null && (id === 'search' || [...$(id).options].some(option => option.value === value))) $(id).value = value;
   });
@@ -117,7 +124,8 @@
     const query = normalize($('search').value.trim());
     const rows = data.results.filter(attempt => {
       const song = songFor(attempt);
-      return (!$('level').value || String(attempt.level) === $('level').value)
+      return (!$('player-filter').value || attempt.player === $('player-filter').value)
+        && (!$('level').value || String(attempt.level) === $('level').value)
         && (!$('mode').value || attempt.mode === $('mode').value)
         && normalize(`${titleFor(attempt)} ${attempt.song} ${song?.artist ?? ''} ${playerFor(attempt.player)?.name ?? ''}`).includes(query);
     });
@@ -130,14 +138,14 @@
     $('results').innerHTML = rows.map(attempt => {
       const song = songFor(attempt);
       return `<tr data-attempt="${escape(attempt.id)}">
-        <td class="song-cell"><div class="song-entry">${song ? image(song) : ''}<span><button class="song-name" data-attempt="${escape(attempt.id)}">${escape(titleFor(attempt))}</button><span class="song-player">${escape(playerFor(attempt.player)?.name)} <span>·</span> ${escape(song?.artist ?? '')}</span></span></div></td>
-        <td data-label="Chart"><span class="chart">${chartName(attempt)}</span></td><td data-label="Grade" class="grade">${escape(attempt.grade)}</td>
+        <td class="song-cell"><div class="song-entry">${song ? image(song) : '<span class="cover-wrap cover-na">N/A</span>'}<span><button class="song-name" data-attempt="${escape(attempt.id)}">${escape(titleFor(attempt))}</button><span class="song-player">${escape(playerFor(attempt.player)?.name)} <span>·</span> ${escape(song?.artist ?? '')}</span></span></div></td>
+        <td data-label="Chart"><span class="chart ${attempt.mode === 'Double' ? 'double-chart' : ''}">${chartName(attempt)}</span></td><td data-label="Grade" class="grade">${escape(attempt.grade)}</td>
         <td data-label="Machine score">${number(attempt.score)}</td><td data-label="Points" class="numeric points">${number(calc.points(attempt, data.event))}</td>
         <td class="row-action"><button class="detail-button" data-attempt="${escape(attempt.id)}" aria-label="View ${escape(titleFor(attempt))} details">↗</button></td></tr>`;
     }).join('');
     if (updateURL) {
       const url = new URL(location.href);
-      ['search', 'level', 'mode', 'sort'].forEach(id => {
+      ['search', 'player-filter', 'level', 'mode', 'sort'].forEach(id => {
         const value = $(id).value;
         if (value && !(id === 'sort' && value === 'points')) url.searchParams.set(id, value);
         else url.searchParams.delete(id);
@@ -154,8 +162,8 @@
       ${image(song, true)}<span class="song-card-body"><strong>${escape(song.title)}</strong><small>${escape(song.artist)}</small><span class="song-tags"><span>${bpm(song)} BPM</span><span>${escape(song.cut)}</span></span></span></button>`).join('') || '<p class="footnote">No songs match this search.</p>';
   }
 
-  $('players-list').innerHTML = data.players.map(player => `<button class="player-card" data-player="${escape(player.id)}"><span class="avatar">${escape(player.name.slice(0, 2))}</span><span><strong>${escape(player.name)}</strong><small>${escape([player.location, player.country].filter(Boolean).join(', ') || 'Location not provided')} · ${counted.filter(item => item.result.player === player.id).length} counted songs</small></span><span class="profile-arrow">↗</span></button>`).join('') + '<article class="player-card pending-player"><span class="avatar">?</span><span><strong>More player profiles</strong><small>Individual photos, gamer tags and results to be added.</small></span></article>';
-  ['search', 'level', 'mode', 'sort'].forEach(id => $(id).addEventListener(id === 'search' ? 'input' : 'change', () => renderResults(true)));
+  $('players-list').innerHTML = data.players.map(player => `<button class="player-card" data-player="${escape(player.id)}">${avatar(player)}<span><strong>${escape(player.name)}</strong><small>${escape([player.location, player.country].filter(Boolean).join(', ') || 'Location N/A')} · ${counted.filter(item => item.result.player === player.id).length} counted songs</small></span><span class="profile-arrow">↗</span></button>`).join('') + '<article class="player-card pending-player"><span class="avatar">?</span><span><strong>More player profiles</strong><small>Individual photos, gamer tags and results to be added.</small></span></article>';
+  ['search', 'player-filter', 'level', 'mode', 'sort'].forEach(id => $(id).addEventListener(id === 'search' ? 'input' : 'change', () => renderResults(true)));
   $('song-search').addEventListener('input', renderCatalog);
   document.addEventListener('click', event => {
     const attempt = event.target.closest('[data-attempt]');
