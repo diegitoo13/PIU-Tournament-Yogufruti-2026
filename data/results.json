@@ -7,7 +7,7 @@
     "date": "2026-11-01",
     "status": "provisional",
     "minLevel": 5,
-    "maxLevel": null,
+    "maxLevel": 23,
     "sessionSeconds": 1800
   },
   "players": [

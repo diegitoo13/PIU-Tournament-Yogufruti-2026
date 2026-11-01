@@ -2,6 +2,12 @@
 
 Reviewed November 1, 2026. Seven players, 83 attempts, 70 identified songs, 593 current Single/Double chart records and 70 local covers. The source workbook, corrected NUMI CSV and AZUAAAAO CSV are recorded with SHA-256 hashes in `data/import-manifest.json`; inputs are read only.
 
+## Rule reconciliation
+
+The organizer supplied the written rules again: minimum Lv. 5, maximum Lv. 23, normal Arcade, Single/Double equal scoring, best tournament points per player/song, and selection strictly before 30:00. The previous uncapped event configuration and page text were incorrect and are now corrected to Lv. 23. No submitted attempt exceeds Lv. 23, so all current totals remain unchanged.
+
+All grade multipliers match the written table. The maximum is 3,680 per song; the minimum is 375. Session totals add counted songs and have no fixed song-count cap. All submitted attempts are distinct per player/song; the common twelve-song count comes from the supplied files. The highest submitted individual result is 3,000, below the per-song maximum. Selection times remain absent, so compliance with the session timer cannot be independently proven from these files.
+
 ## Reconciled standings
 
 | Player | Points | Counted songs |
@@ -41,4 +47,4 @@ All imported attempt points equal the supplied source points. All five workbook 
 
 `tests/scoring.test.js` checks every source point, player totals, duplicate-song selection across charts, equal-point tie handling, level and mode/cut eligibility, explicit abandonment, and the exact 30-minute boundary. `tests/result-display.test.js` checks the judgment display and source references for all attempts. `tests/catalog.test.js` checks all 70 unique catalog matches, played chart levels, metadata, local WebP files and SHA-256 integrity, profile hashes, and JSON/browser-data parity. The importer is deterministic for identical source inputs.
 
-Browser access review rejected the local preview earlier in this session. This update was checked through source, data and asset validation; no completed fresh visual browser check is claimed. The layout retains the established mobile card view and responsive catalog.
+Live result dialogs were checked on the public HTTPS site. OVERNIGHT FLOWER correctly showed Lv. 22, AAA and 2,420 points; the formula now explicitly labels the grade multiplier and appears above the metadata. Automated display checks cover all 83 attempts. The layout retains the established mobile card view and responsive catalog.

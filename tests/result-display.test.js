@@ -33,6 +33,8 @@ for (const attempt of data.results) {
     assert.ok(html.includes(`<dt>${label}</dt><dd>${attempt[field].toLocaleString('en-US')}</dd>`), `${attempt.id} ${field}`);
   }
   assert.ok(html.includes(attempt.sourceReference.file),`${attempt.id} source`);
+  assert.ok(html.includes(`<b>${scoring.factors[attempt.grade].toFixed(2)} (${attempt.grade})</b>`),`${attempt.id} grade multiplier label`);
+  assert.ok(html.includes(`<b>${scoring.points(attempt,data.event).toLocaleString('en-US')} tournament points</b>`),`${attempt.id} displayed tournament points`);
 }
 click('song','pumpout:1007');
 const songHtml = node('detail-content').innerHTML;
@@ -43,3 +45,8 @@ assert.ok(songHtml.includes('Miss <b>123</b>'));
 click('attempt','ATT-00057');
 assert.ok(node('detail-content').innerHTML.includes('<dt>Machine score</dt><dd>N/A</dd>'));
 console.log('Display checks passed for all 83 attempts and recorded song results.');
+
+click('attempt','ATT-00012');
+assert.ok(node('detail-content').innerHTML.includes('Base points: Lv. 22 × 100 = 2,200'));
+assert.ok(node('detail-content').innerHTML.includes('<b>1.10 (AAA)</b>'));
+assert.ok(node('detail-content').innerHTML.includes('<b>2,420 tournament points</b>'));

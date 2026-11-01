@@ -70,6 +70,7 @@
       <div class="detail-top"><span class="section-number">RESULT / ${escape(attempt.id.toUpperCase())}</span><h2 id="detail-title">${escape(titleFor(attempt))}</h2><p>${escape(playerFor(attempt.player)?.name)}</p></div>
       ${song ? image(song, true) : '<div class="unidentified-cover">Artwork N/A · song title pending</div>'}
       <div class="detail-summary"><span class="chart ${attempt.mode === 'Double' ? 'double-chart' : ''}">${chartName(attempt)}</span><span class="grade">${escape(attempt.grade)}</span><strong>${number(points)} pts</strong><span class="counted-label">${countedIds.has(attempt.id) ? 'COUNTED' : 'NOT COUNTED'}</span></div>
+      <div class="formula"><span class="formula-base">Base points: Lv. ${attempt.level} × 100 = ${number(attempt.level * 100)}</span><p><b>${number(attempt.level * 100)}</b> × <b>${calc.factors[attempt.grade].toFixed(2)} (${escape(attempt.grade)})</b> = <b>${number(points)} tournament points</b></p><small>The recorded grade determines the multiplier.</small></div>
       ${song ? songMetadata(song, attempt) : ''}
       ${fields([
         ['Perfect', number(attempt.perfect)], ['Great', number(attempt.great)], ['Good', number(attempt.good)],
@@ -77,7 +78,7 @@
         ['Calories', number(attempt.kcal)], ['Machine score', number(attempt.score)], ['Pass / break', attempt.passStatus],
         ['Performance', attempt.performance], ['Selected at (seconds)', number(attempt.selectionSecond)],
       ])}
-      <div class="formula">${attempt.level} × 100 × ${calc.factors[attempt.grade].toFixed(2)} = <b>${number(points)} tournament points</b></div>
+
       <div class="detail-note">${escape(attempt.reviewNote || 'Results are provisional. N/A marks an unverified or unavailable value.')}</div>
       ${sourceReference(attempt)}
       ${song ? `<div class="source-links"><a href="${escape(song.source)}" target="_blank" rel="noopener noreferrer">Phoenix 2 catalog source ↗</a><a href="${escape(song.artworkSource)}" target="_blank" rel="noopener noreferrer">Artwork source ↗</a></div>` : ''}
@@ -93,10 +94,10 @@
     showDialog(`
       <div class="detail-top"><span class="section-number">SONG / PHOENIX 2</span><h2 id="detail-title">${escape(song.title)}</h2><p>${escape(song.artist)}</p></div>
       ${image(song, true)}${songMetadata(song)}
-      <div class="chart-list">${['Single', 'Double'].map(mode => `<div><h3>${mode.toUpperCase()}</h3><div class="chart-chips">${song.charts.filter(chart => chart.mode === mode).map(chart => `<span class="chart ${mode === 'Double' ? 'double-chart' : ''}" title="Chart author: ${escape(chart.stepmaker ?? 'Unverified')}">${chartName(chart)}</span>`).join('')}</div></div>`).join('')}</div>
+      <div class="chart-list">${['Single', 'Double'].map(mode => `<div><h3>AVAILABLE ${mode.toUpperCase()} CHARTS</h3><div class="chart-chips">${song.charts.filter(chart => chart.mode === mode).map(chart => `<span class="chart ${mode === 'Double' ? 'double-chart' : ''}" title="Chart author: ${escape(chart.stepmaker ?? 'Unverified')}">${chartName(chart)}</span>`).join('')}</div></div>`).join('')}</div>
       ${fields([['Recorded plays', plays.length], ['Best machine score', bestScore ? number(bestScore) : 'N/A'], ['Best tournament points', number(bestPoints)]])}
       <section class="song-results"><h3>RECORDED RESULTS</h3><p>Perfect, Great, Good, Bad and Miss belong to each player's attempt. Select a result for combo, calories and its source row.</p>${plays.map(recordedResult).join('') || '<p>No recorded results.</p>'}</section>
-      <div class="detail-note">Chart list: ${escape(song.catalogVersion)} · Community catalog. Chart authors appear when available. Song duration and note counts are not verified.</div>
+      <div class="detail-note">Available chart levels: ${escape(song.catalogVersion)} · Recorded player results are listed above. Community catalog. Chart authors appear when available. Song duration and note counts are not verified.</div>
       <div class="source-links"><a href="${escape(song.source)}" target="_blank" rel="noopener noreferrer">Metadata source ↗</a><a href="${escape(song.artworkSource)}" target="_blank" rel="noopener noreferrer">Artwork source ↗</a></div>
     `);
   }

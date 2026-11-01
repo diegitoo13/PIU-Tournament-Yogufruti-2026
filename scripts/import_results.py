@@ -115,7 +115,7 @@ manifest = {
     'unresolvedSongKeys':sorted({result['sourceSongKey'] for result in results if not result['songIdentityVerified']}),
     'corrections':['SPRADA photo identified explicitly by organizer','83 corrected to B3 by organizer','Ghost Bloody Train 995092 is already ATT-00059; not duplicated','Readable SOYASAUCE photos used to recover seven song identities','NUMI KUGUTSU source alias shares the canonical song ID with the existing catalog'],
 }
-data = {'event':{'id':'yogufruti-2026','sourceEventId':'PIU-PR-2026-11-01','title':'West Side Tournament 2026','location':'Aguadilla, Puerto Rico','date':'2026-11-01','status':'provisional','minLevel':5,'maxLevel':None,'sessionSeconds':1800},'players':players,'results':results}
+data = {'event':{'id':'yogufruti-2026','sourceEventId':'PIU-PR-2026-11-01','title':'West Side Tournament 2026','location':'Aguadilla, Puerto Rico','date':'2026-11-01','status':'provisional','minLevel':5,'maxLevel':23,'sessionSeconds':1800},'players':players,'results':results}
 (ROOT/'data/results.json').write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
 (ROOT/'data/results.js').write_text('window.TOURNAMENT_DATA = '+json.dumps(data,ensure_ascii=False,indent=2)+';\n')
 (ROOT/'data/import-manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')

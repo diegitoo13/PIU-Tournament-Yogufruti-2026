@@ -59,3 +59,22 @@ for (const id of ['ATT-00068','ATT-00069']) {
 assert.equal(data.results.filter(attempt => !attempt.songIdentityVerified).length,3);
 assert.deepEqual(JSON.parse(JSON.stringify(data)),JSON.parse(fs.readFileSync('data/results.json','utf8')),'Browser and portable results match');
 console.log('Import checks passed: seven players, 83 attempts, all source points and totals reconciled.');
+
+// Published tournament rules: all grade factors and the inclusive Lv. 5–23 range.
+assert.equal(data.event.minLevel,5);
+assert.equal(data.event.maxLevel,23);
+const ruleFactors = {F:.75,D:.75,C:.75,B:.75,A:.75,'A+':.75,AA:1,'AA+':1.05,AAA:1.1,'AAA+':1.2,S:1.3,'S+':1.35,SS:1.4,'SS+':1.45,SSS:1.5,'SSS+':1.55,'SSS+ PG':1.6};
+for (const [grade,factor] of Object.entries(ruleFactors)) {
+  assert.equal(scoring.factors[grade],factor);
+  for (const mode of ['Single','Double']) {
+    for(let level=5;level<=23;level++) assert.equal(scoring.points({...eligible,level,mode,grade},data.event),Math.round(level*100*factor));
+    assert.equal(scoring.points({...eligible,level:24,mode,grade},data.event),null);
+  }
+}
+assert.equal(scoring.points({...eligible,level:23,grade:'SSS+ PG'},data.event),3680);
+assert.equal(scoring.points({...eligible,level:5,grade:'A+'},data.event),375);
+for(const cut of ['Short Cut','Remix','Full Song']) assert.equal(scoring.points({...eligible,cut},data.event),null);
+const thirteenSongs=Array.from({length:13},(_,i)=>({...eligible,id:`play-${i}`,songId:`song-${i}`}));
+assert.equal(scoring.counted(thirteenSongs,data.event).length,13,'There is no twelve-song cap');
+assert.equal(scoring.points({...eligible,score:1,perfect:0,miss:1000},data.event),2300,'Level and grade determine tournament points');
+console.log('Published rules checked: all grade/level combinations, 3,680 maximum and no fixed song limit.');

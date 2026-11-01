@@ -24,7 +24,7 @@ python scripts/import_results.py /absolute/path/to/tournament.xlsx /absolute/pat
 
 It reads the normalized workbook tables (headers on row 6), upserts the optional CSVs by attempt ID, and writes portable `data/results.json`, browser `data/results.js`, and an input hash manifest. The current inputs are `Torneo_PIU_2026_Resultados_5_Jugadores.xlsx` and `PIU_2026_Intentos_NUMI_12_corregidos.csv`, and `AZUAAAAO_12_canciones_datos_completos.csv`. Source files are not modified or published. `data/workbook-song-map.json` contains reviewed canonical song mappings; `data/player-profiles.json` contains confirmed profile overrides. Review new mappings and player IDs before importing a different tournament.
 
-`scoring.js` handles grade factors, eligibility, best-per-song deduplication and tied ranks. The tests reconcile every imported attempt's points and all five workbook totals, plus NUMI's 21,855-point and AZUAAAAO's 11,075-point totals. DIEGITOO113 remains at 31,580 points, including full S23 points. Do not infer eligibility or game timing from image filenames or upload order.
+`scoring.js` handles grade factors, Lv. 5–23 eligibility, best-per-song deduplication and tied ranks. The 3,680-point maximum applies to one song; the session total sums all eligible unique songs selected before 30:00, with no fixed song-count limit. The tests reconcile every imported attempt's points and all five workbook totals, plus NUMI's 21,855-point and AZUAAAAO's 11,075-point totals. DIEGITOO113 remains at 31,580 points, including full S23 points. Do not infer eligibility or game timing from image filenames or upload order.
 
 ## Validate source data
 
