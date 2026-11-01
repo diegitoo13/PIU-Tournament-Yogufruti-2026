@@ -1,0 +1,29 @@
+[
+  {
+    "id": "participants",
+    "localPath": "assets/event/participants.webp",
+    "source": "User-supplied event photograph or invitation",
+    "sourceFilename": "codex-clipboard-d405ae24-0c31-4f94-b964-85a84077d6d3.png",
+    "sourceSha256": "5af015b8fa5dfcf4662cc6e71db27410602957c57221d0e574524d5c3ae08fc0",
+    "localSha256": "b010f988884707593a6fbb00ba2edf8a9c2863fcc1e86cd97781fb028ef8178a",
+    "localBytes": 251176
+  },
+  {
+    "id": "finisher-medal",
+    "localPath": "assets/event/finisher-medal.webp",
+    "source": "User-supplied event photograph or invitation",
+    "sourceFilename": "codex-clipboard-1cd1818a-81ee-4477-b707-baf11b0d1e42.png",
+    "sourceSha256": "1c6ad6285cc3dc107e583e4d9f7c569a45d69179aaf2eb8701b2b6fb927e6161",
+    "localSha256": "1cc874a8ffb08f0488b656fccdd02d01f0a88d7f5aeffd7a8b7c7d3d1554073f",
+    "localBytes": 101718
+  },
+  {
+    "id": "invitation",
+    "localPath": "assets/event/invitation.webp",
+    "source": "User-supplied event photograph or invitation",
+    "sourceFilename": "codex-clipboard-e191071d-2b61-4277-8d9a-2ad06255def7.png",
+    "sourceSha256": "c0c12158a78a04c8e3c4ef96afd0a45be78196b8f04e1a7032255f9c73d10008",
+    "localSha256": "b4d014ed5e433d91a8b926fdaae03efda22e6385b1b631755b997bbc994dac2b",
+    "localBytes": 206204
+  }
+]
