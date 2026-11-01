@@ -7,3 +7,21 @@ button{color:inherit}.event-subtitle{display:block;margin-top:10px;font-size:10p
 @media(max-width:700px){.topbar nav{gap:10px}.event-head h1{font-size:clamp(31px,8.5vw,46px)}.song-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.song-card strong{font-size:12px}.song-card-body{padding:10px}.song-tags{gap:10px;font-size:9px}.score-table{min-width:0;display:block}.score-table thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}.score-table tbody{display:block}.score-table tr{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));position:relative;padding:15px 12px;gap:14px 8px;border-top:1px solid var(--line)}.score-table tr:first-child{border-top:0}.score-table td{padding:0;border:0;font-size:12px;white-space:normal}.score-table .song-cell{grid-column:1/-1;padding-right:23px}.score-table td[data-label]::before{content:attr(data-label);display:block;text-transform:uppercase;font-size:8px;letter-spacing:.4px;font-weight:600;color:var(--muted);margin-bottom:5px}.score-table .row-action{position:absolute;right:10px;top:12px}.score-table .numeric{text-align:right}.song-name{min-width:0;font-size:12px;display:block;width:100%}.song-entry{gap:10px}.song-entry>span:last-child{min-width:0}.cover-wrap{width:65px}.song-player{font-size:9px}.score-table .chart{font-size:10px;padding:3px 5px}.event-media figcaption{padding:10px 12px}.event-artifacts a{height:210px}.detail-top,.source-links,.profile-results,.profile-grades{padding-left:18px;padding-right:18px}.metadata-grid{padding-left:18px;padding-right:18px}.detail-note{padding-left:18px;padding-right:18px}.data-coverage{font-size:10px}.section-heading .badge{font-size:9px}footer{gap:12px}.summary>div{min-width:0}}
 
 .pending-player{border-style:dashed;cursor:default}.pending-player .avatar{background:#282e38;color:#9faab7}
+
+/* Compact tournament header */
+.topbar-inner{height:58px;gap:24px}
+.brand{gap:9px;font-size:13px;font-weight:750;letter-spacing:0;line-height:1.3}
+.brand-prefix{color:var(--muted);font-size:11px;letter-spacing:.6px;border-right:1px solid var(--line);padding-right:9px}
+.topbar nav{gap:24px;font-size:12px}
+.top-status{text-transform:uppercase;letter-spacing:.5px}
+.event-head{padding:28px 0 22px;align-items:start}
+.event-head .eyebrow{font-size:10px;letter-spacing:.8px;color:var(--muted)}
+.event-head h1{margin:7px 0 0;font-size:28px;line-height:1.2;letter-spacing:-.3px;font-weight:750}
+.event-head p{margin:6px 0 0;font-size:13px;color:var(--muted)}
+@media(max-width:700px){
+  .topbar-inner{height:auto;min-height:58px;gap:0;padding:12px 0}
+  .topbar nav{margin-top:12px;gap:8px}
+  .event-head{padding:22px 0 18px}
+  .event-head h1{font-size:23px;letter-spacing:-.2px}
+  .event-head p{font-size:12px;line-height:1.5}
+}
