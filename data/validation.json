@@ -1,8 +1,8 @@
 {
   "reviewedAt": "2026-11-01",
-  "attemptCount": 83,
-  "comparedValues": 1411,
-  "completeJudgmentAttempts": 83,
+  "attemptCount": 107,
+  "comparedValues": 1819,
+  "completeJudgmentAttempts": 107,
   "allSourceValuesMatch": true,
   "differences": [],
   "missingMachineValues": [
@@ -32,6 +32,10 @@
     {
       "file": "AZUAAAAO_12_canciones_datos_completos.csv",
       "sha256": "188f39a08ac83f7803ace18f2e5d173ef0ab4d1489782e05d878a2a79d31338f"
+    },
+    {
+      "file": "PIU_2026_THEJMAXX_SANTANA_12_canciones_cada_uno.csv",
+      "sha256": "7ca84fdc906ac291eee7b3250c462c5e1c4c4a82c6f8db06a4bb1ea9b08a6d64"
     }
   ]
 }

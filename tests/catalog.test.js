@@ -5,8 +5,8 @@ const catalog = JSON.parse(fs.readFileSync('data/catalog.json', 'utf8'));
 const context = {window:{}};
 vm.runInNewContext(fs.readFileSync('data/results.js','utf8'),context);
 const data = context.window.TOURNAMENT_DATA;
-assert.equal(catalog.songs.length, 70);
-assert.equal(new Set(catalog.songs.map(song => song.id)).size, 70);
+assert.equal(catalog.songs.length, 81);
+assert.equal(new Set(catalog.songs.map(song => song.id)).size, 81);
 for (const attempt of data.results) {
   if (!attempt.songIdentityVerified) {
     assert.equal(attempt.sourceSongId,null);
@@ -28,8 +28,8 @@ for (const source of JSON.parse(fs.readFileSync('data/asset-sources.json', 'utf8
   const hash = require('node:crypto').createHash('sha256').update(fs.readFileSync(source.localPath)).digest('hex');
   assert.equal(hash,source.localSha256, `Asset integrity: ${source.title}`);
 }
-assert.equal(data.results.filter(attempt => attempt.score != null).length,82);
-console.log('Catalog checks passed: 70 covers, metadata and matching current charts.');
+assert.equal(data.results.filter(attempt => attempt.score != null).length,106);
+console.log('Catalog checks passed: 81 covers, metadata and matching current charts.');
 
 for (const source of JSON.parse(fs.readFileSync('data/profile-assets.json', 'utf8'))) {
   const hash = require('node:crypto').createHash('sha256').update(fs.readFileSync(source.localPath)).digest('hex');

@@ -51,7 +51,7 @@ for csv_path in csv_paths:
             raw_songs[record['song_id']] = {'titulo_canonico': title}
     for player_id in sorted({record['player_id'] for record in raw_attempts.values()}):
         if not any(player['player_id'] == player_id for player in raw_players):
-            player_names = {'PLY-0006':'NUMI', 'PLY-0007':'AZUAAAAO'}
+            player_names = {'PLY-0006':'NUMI', 'PLY-0007':'AZUAAAAO', 'PLY-0008':'THEJMAXX', 'PLY-0009':'SANTANA'}
             if player_id not in player_names:
                 raise ValueError(f'Unknown player {player_id}; add a confirmed profile first')
             name = player_names[player_id]

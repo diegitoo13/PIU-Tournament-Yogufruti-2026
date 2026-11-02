@@ -44,7 +44,7 @@ assert.ok(songHtml.includes('Perfect <b>652</b>'));
 assert.ok(songHtml.includes('Miss <b>123</b>'));
 click('attempt','ATT-00057');
 assert.ok(node('detail-content').innerHTML.includes('<dt>Machine score</dt><dd>N/A</dd>'));
-console.log('Display checks passed for all 83 attempts and recorded song results.');
+console.log('Display checks passed for all 107 attempts and recorded song results.');
 
 click('attempt','ATT-00012');
 assert.ok(node('detail-content').innerHTML.includes('Base points: Lv. 22 × 100 = 2,200'));

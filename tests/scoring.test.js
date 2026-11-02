@@ -6,8 +6,8 @@ const context = {window:{}};
 vm.runInNewContext(fs.readFileSync('data/results.js','utf8'),context);
 const data=context.window.TOURNAMENT_DATA;
 const standings=scoring.standings(data.players,data.results,data.event);
-assert.equal(scoring.counted(data.results,data.event).length,83);
-assert.equal(standings[0].total,31580);
+assert.equal(scoring.counted(data.results,data.event).length,107);
+assert.equal(standings[0].total,33020);
 assert.equal(scoring.points({valid:true,level:23,grade:'AA'},data.event),2300);
 assert.equal(scoring.points({valid:true,level:23,grade:'AA'},{maxLevel:22}),null);
 assert.equal(scoring.points({valid:false,level:23,grade:'SSS'},data.event),null);
@@ -32,9 +32,9 @@ assert.equal(scoring.points({...eligible,verified:false}),null);
 assert.equal(scoring.counted([{...eligible,songId:null}]).length,0);
 console.log('Eligibility checks passed.');
 
-const fixture = {'PLY-0001':[31580,12], 'PLY-0002':[29705,12], 'PLY-0003':[23930,12], 'PLY-0004':[14010,12], 'PLY-0005':[25365,11], 'PLY-0006':[21855,12], 'PLY-0007':[11075,12]};
-assert.equal(data.players.length,7);
-assert.equal(new Set(data.results.map(attempt => attempt.id)).size,83);
+const fixture = {'PLY-0001':[31580,12], 'PLY-0002':[29705,12], 'PLY-0003':[23930,12], 'PLY-0004':[14010,12], 'PLY-0005':[25365,11], 'PLY-0006':[21855,12], 'PLY-0007':[11075,12], 'PLY-0008':[33020,12], 'PLY-0009':[22575,12]};
+assert.equal(data.players.length,9);
+assert.equal(new Set(data.results.map(attempt => attempt.id)).size,107);
 for (const row of standings) {
   assert.deepEqual([row.total,row.plays.length],fixture[row.player.id],row.player.name);
 }
@@ -46,7 +46,7 @@ for (const [id,total] of Object.entries(manifest.expectedWorkbookTotals)) {
 const eternal = data.results.find(attempt => attempt.id === 'ATT-00006');
 assert.equal(scoring.points(eternal,data.event),3000);
 const duplicateChart = {...eternal,id:'repeat',level:23,grade:'AA'};
-assert.equal(scoring.standings(data.players,[...data.results,duplicateChart],data.event)[0].total,31580);
+assert.equal(scoring.standings(data.players,[...data.results,duplicateChart],data.event).find(row => row.player.id === 'PLY-0001').total,31580);
 const lastSoya = data.results.filter(attempt => attempt.player === 'PLY-0005' && attempt.score === 995092);
 assert.equal(lastSoya.length,1,'Final SOYASAUCE photo must not be duplicated');
 assert.equal(lastSoya[0].songId,'pumpout:1102');
@@ -58,7 +58,7 @@ for (const id of ['ATT-00068','ATT-00069']) {
 }
 assert.equal(data.results.filter(attempt => !attempt.songIdentityVerified).length,3);
 assert.deepEqual(JSON.parse(JSON.stringify(data)),JSON.parse(fs.readFileSync('data/results.json','utf8')),'Browser and portable results match');
-console.log('Import checks passed: seven players, 83 attempts, all source points and totals reconciled.');
+console.log('Import checks passed: nine players, 107 attempts, all source points and totals reconciled.');
 
 // Published tournament rules: all grade factors and the inclusive Lv. 5–23 range.
 assert.equal(data.event.minLevel,5);

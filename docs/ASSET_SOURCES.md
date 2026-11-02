@@ -11,7 +11,7 @@ Reviewed November 1, 2026. All runtime images are local WebP files. The communit
 
 ## Downloaded artwork
 
-All 70 identified songs have exact database-matched artwork. Covers and thumbnails preserve proportions; source and derivative hashes are recorded in `data/asset-sources.json`. Three unidentified SOYASAUCE song records show N/A without substitute artwork.
+All 81 identified songs have exact database-matched artwork. Covers and thumbnails preserve proportions; source and derivative hashes are recorded in `data/asset-sources.json`. Three unidentified SOYASAUCE song records show N/A without substitute artwork.
 
 | Song | Source | Local cover | Source dimensions | Local bytes |
 | --- | --- | --- | --- | ---: |
@@ -76,7 +76,6 @@ All 70 identified songs have exact database-matched artwork. Covers and thumbnai
 | BEDLAM | [Source](https://pumpout.anyhowstep.com/img/card/15B5.png) | `assets/songs/646-cover.webp` | 250 × 188 | 3,604 |
 | STAGER | [Source](https://raw.githubusercontent.com/aaaaaa2493/pumpout-db-updates/68d8cc356e585244b1dafd73a23b8c3386e6e31f/img_big/Phoenix_STAGER.png) | `assets/songs/959-cover.webp` | 1280 × 720 | 21,490 |
 | The Quick Brown Fox Jumps Over The Lazy Dog | [Source](https://pumpout.anyhowstep.com/img/card/1510.png) | `assets/songs/686-cover.webp` | 250 × 188 | 13,920 |
-
 | Cycling! | [Source](https://pumpout.anyhowstep.com/img/card/1683.png) | `assets/songs/826-cover.webp` | 250 × 188 | 11,638 |
 | Fracture Temporelle | [Source](https://raw.githubusercontent.com/aaaaaa2493/pumpout-db-updates/68d8cc356e585244b1dafd73a23b8c3386e6e31f/img_big/Phoenix_Fracture_Temporelle.png) | `assets/songs/981-cover.webp` | 1920 × 1080 | 33,348 |
 | GOODTEK | [Source](https://raw.githubusercontent.com/aaaaaa2493/pumpout-db-updates/68d8cc356e585244b1dafd73a23b8c3386e6e31f/img_big/Phoenix_GOODTEK.png) | `assets/songs/914-cover.webp` | 1920 × 1080 | 38,788 |
@@ -86,6 +85,17 @@ All 70 identified songs have exact database-matched artwork. Covers and thumbnai
 | Galaxy Collapse | [Source](https://raw.githubusercontent.com/aaaaaa2493/pumpout-db-updates/68d8cc356e585244b1dafd73a23b8c3386e6e31f/img_big/Phoenix_Galaxy_Collapse.png) | `assets/songs/938-cover.webp` | 1280 × 720 | 42,602 |
 | SUPER☆HARAGURO☆POP | [Source](https://raw.githubusercontent.com/aaaaaa2493/pumpout-db-updates/68d8cc356e585244b1dafd73a23b8c3386e6e31f/img_big/Phoenix2_SUPERHARAGUROPOP.png) | `assets/songs/1073-cover.webp` | 1920 × 1080 | 86,902 |
 | INFiNiTE ENERZY -Overdoze- | [Source](https://raw.githubusercontent.com/aaaaaa2493/pumpout-db-updates/68d8cc356e585244b1dafd73a23b8c3386e6e31f/img_big/Phoenix2_INFiNiTE_ENERZY__Overdoze_.png) | `assets/songs/1070-cover.webp` | 1920 × 1080 | 26,124 |
+| iRELLiA | [Source](https://raw.githubusercontent.com/aaaaaa2493/pumpout-db-updates/68d8cc356e585244b1dafd73a23b8c3386e6e31f/img_big/Phoenix_iRELLiA.png) | `assets/songs/948-cover.webp` | 1280 × 720 | 26,330 |
+| Dement | [Source](https://pumpout.anyhowstep.com/img/card/xx-dement.png) | `assets/songs/759-cover.webp` | 250 × 188 | 13,656 |
+| Nade Nade | [Source](https://raw.githubusercontent.com/aaaaaa2493/pumpout-db-updates/68d8cc356e585244b1dafd73a23b8c3386e6e31f/img_big/Phoenix_Nade_Nade.png) | `assets/songs/1016-cover.webp` | 1920 × 1080 | 71,288 |
+| Dignity | [Source](https://pumpout.anyhowstep.com/img/card/242.png) | `assets/songs/76-cover.webp` | 250 × 188 | 5,332 |
+| QUATTUORUX | [Source](https://raw.githubusercontent.com/aaaaaa2493/pumpout-db-updates/68d8cc356e585244b1dafd73a23b8c3386e6e31f/img_big/Phoenix2_QUATTUORUX.png) | `assets/songs/1068-cover.webp` | 1920 × 1080 | 105,890 |
+| Kokugen Kairou Labyrinth | [Source](https://pumpout.anyhowstep.com/img/card/1718.png) | `assets/songs/888-cover.webp` | 250 × 188 | 7,670 |
+| Human Extinction (PIU Edit.) | [Source](https://raw.githubusercontent.com/aaaaaa2493/pumpout-db-updates/68d8cc356e585244b1dafd73a23b8c3386e6e31f/img_big/Phoenix_Human_Extinction_PIU_Edit.png) | `assets/songs/1027-cover.webp` | 1920 × 1080 | 87,964 |
+| Dual Racing <RED vs BLUE> | [Source](https://pumpout.anyhowstep.com/img/card/1682.png) | `assets/songs/833-cover.webp` | 300 × 168 | 14,126 |
+| Doppelganger | [Source](https://raw.githubusercontent.com/aaaaaa2493/pumpout-db-updates/68d8cc356e585244b1dafd73a23b8c3386e6e31f/img_big/Phoenix_Doppelganger.png) | `assets/songs/1000-cover.webp` | 1920 × 1080 | 50,932 |
+| GLORIA | [Source](https://pumpout.anyhowstep.com/img/card/1699.png) | `assets/songs/887-cover.webp` | 250 × 188 | 8,166 |
+| Top City | [Source](https://pumpout.anyhowstep.com/img/card/710.png) | `assets/songs/438-cover.webp` | 250 × 188 | 9,676 |
 
 Dream To Nightmare uses the exact legacy card `/img/card/135.png` referenced by the database, preserved without upscaling.
 
