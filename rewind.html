@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#11130e">
+<title>Tournament Rewind | West Side 2026</title><meta name="description" content="West Side PIU tournament recap. Explore player statistics and download 1080 × 1920 story images.">
+<link rel="stylesheet" href="rewind.css?v=1"><script defer src="scoring.js?v=players9-20261101"></script><script defer src="rewind-data.js?v=1"></script><script defer src="rewind.js?v=1"></script>
+</head>
+<body>
+<header><a class="wordmark" href="./">PIU <span>WEST SIDE 2026</span></a><a href="./">← Scoreboard</a></header>
+<main>
+<section class="controls" aria-labelledby="page-title">
+<p class="eyebrow">YOUR TOURNAMENT, FRAME BY FRAME</p><h1 id="page-title">WEST SIDE<br><span>REWIND.</span></h1>
+<p class="intro">The scores. The songs. The session.<br>A recap of the results uploaded so far.</p>
+<label for="recap-player">Choose a recap</label><select id="recap-player" disabled><option value="">Entire tournament</option></select>
+<button id="regenerate" disabled>↻ Regenerate with latest results</button>
+<p id="snapshot" class="muted">Loading tournament data…</p>
+<div class="export-controls"><button class="primary" id="download" disabled>↓ Download this story</button><button id="share" hidden disabled>Share story</button></div>
+<p class="muted">1080 × 1920 PNG · Instagram Story size<br>Save any frame, then upload it to Instagram.</p>
+<details><summary>How the recap is calculated</summary><p>Statistics use the best eligible tournament-point attempt per player and song, following the scoreboard’s rules. Points = level × 100 × grade factor. Machine scores do not determine tournament points.</p><p>Perfect share is Perfect judgments divided by all five judgments on complete records. It is not the game’s accuracy rating. Unknown values are excluded, never treated as zero.</p><p>All standings are provisional. More uploads and identity reviews may change the recap. Regenerate reloads the latest published results; previously downloaded images remain snapshots.</p><a href="data/validation.json">View source validation</a></details>
+<p id="status" role="status" aria-live="polite"></p>
+</section>
+<section class="viewer" aria-label="Recap stories" aria-busy="true">
+<div id="progress" class="progress" aria-label="Choose story"></div>
+<div class="story-frame" id="story-frame" tabindex="0" aria-label="Story viewer. Use left and right arrow keys to change story."><canvas id="story" width="1080" height="1920" role="img" aria-label="Loading recap"></canvas></div>
+<div class="story-nav"><button id="previous" aria-label="Previous story" disabled>←</button><span id="slide-count" aria-live="polite">0 / 0</span><button id="next" aria-label="Next story" disabled>→</button></div>
+<p class="swipe-hint">Swipe a story or use the arrows</p><div id="story-description" class="sr-only" aria-live="polite"></div>
+</section>
+</main>
+</body></html>

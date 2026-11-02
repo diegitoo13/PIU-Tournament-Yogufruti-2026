@@ -9,6 +9,8 @@ python3 -m http.server 8000
 node tests/scoring.test.js
 node tests/catalog.test.js
 node tests/result-display.test.js
+node tests/rewind.test.js
+node tests/rewind-display.test.js
 node --check app.js
 ```
 
@@ -47,3 +49,11 @@ The directory contains `phoenix-2-1.02.db`, exact database card filenames and op
 ## Publishing and domain
 
 Commit and push to `main` to deploy. `.nojekyll` disables Jekyll; `CNAME` preserves `piu.kazza.jp`. DNS uses only the `piu` subdomain CNAME pointing to `diegitoo13.github.io`. Existing root-domain and other subdomain records are unchanged. The site is static; editing shared results or uploading new data requires the offline import-and-publish workflow or a separate authenticated backend.
+
+## Tournament Rewind
+
+Open `/rewind.html` for seven tournament stories or select any player for their personal recap. Navigation supports buttons, keyboard arrows (with the story focused), and touch swipes. Download the current frame as a 1080 × 1920 PNG, or use native file sharing where available. Each export includes the provisional status and snapshot date/time. No server, external rendering service, font dependency, or generated artwork is used.
+
+The page fetches the current `data/results.json` and `data/catalog.json` on load and on **Regenerate with latest results**, bypassing the browser cache. Publish new imports normally; no recap assets need rebuilding. Existing downloaded images are immutable snapshots. A player can be linked with `rewind.html?player=PLY-0001`.
+
+`rewind-data.js` uses the same `scoring.js` eligibility and best-per-song logic as standings. Grade, mode, judgment, song popularity, and combo statistics use counted plays. Song popularity excludes unresolved identities. Perfect share is calculated only from records containing all five judgments, and is not official game accuracy. Tied best plays are labeled; one representative artwork is shown. Rankings are provisional, including records whose timing or identity remains unverified.
