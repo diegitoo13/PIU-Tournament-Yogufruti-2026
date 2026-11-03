@@ -29,7 +29,7 @@ All imported attempt points equal the supplied source points. All five workbook 
 ## Corrections and provenance
 
 - Source “83” is B3, explicitly confirmed by the organizer; canonical ID `pumpout:1062`.
-- GHOST, SPRADA, DIEGITOO113, THEJMAXX and SANTANA portraits follow explicit organizer identification; THEJMAXX's photo was supplied as “tjmaxx”. Remaining profiles use initials. The group photo is not used to infer identities.
+- GHOST, SPRADA, DIEGITOO113, THEJMAXX, SANTANA and AZUAAAAO portraits follow explicit organizer identification; THEJMAXX's photo was supplied as “tjmaxx”. Remaining profiles use initials. The group photo is not used to infer identities.
 - Seven SOYASAUCE song identities were recovered by matching readable original result photos to exact scores and judgments. Three identities remain “Song N/A” with no fabricated cover.
 - SOYASAUCE's final Ghost Bloody Train S15 result (995,092, SSS+) already exists as ATT-00059 and is not duplicated. The supplied workbook contains eleven SOYASAUCE attempts.
 - NUMI's Pastry mix and Monkey Fingers attempts remain assigned to NUMI as explicitly confirmed in the corrected CSV, although the screenshots show SPRADA's game profile. This is retained in the result notes.
@@ -51,7 +51,7 @@ All imported attempt points equal the supplied source points. All five workbook 
 | Doppelganger S16 chart level | Not legible in the capture; the Lv. 16 SSS+ estimate is used on organizer confirmation and flagged on the result |
 | YXYZYXY capture timestamp (GMT+9) | Flagged on the affected results; confirm the tournament timing before officializing |
 | Session selection times and pass/break status | Unverified; no inference from upload order |
-| Six player portraits and missing player locations | Initials and N/A |
+| Five player portraits and missing player locations | Initials and N/A |
 | Song duration and note count | Not supplied by this catalog; not fabricated |
 | Dream To Nightmare cover resolution | Exact legacy card, no upscaling |
 

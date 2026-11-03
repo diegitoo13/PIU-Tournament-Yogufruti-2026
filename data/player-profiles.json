@@ -23,5 +23,10 @@
     "photo": "assets/players/santana.webp",
     "photoPosition": "52% 40%",
     "identitySource": "Organizer supplied this photo as SANTANA profile picture"
+  },
+  "PLY-0007": {
+    "photo": "assets/players/azuaaaao.webp",
+    "photoPosition": "50% 35%",
+    "identitySource": "Organizer supplied this image as AZUAAAAO profile picture"
   }
 }

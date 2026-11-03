@@ -43,5 +43,14 @@
     "localSha256": "48b03098c12ca0f87b887fcf547de28b0b084c65cebb1fa278d188c0dc6bbc1d",
     "localBytes": 30836,
     "identity": "Explicitly confirmed by organizer"
+  },
+  {
+    "player": "azuaaaao",
+    "localPath": "assets/players/azuaaaao.webp",
+    "sourceFilename": "32129A36-A972-4352-9F2C-2CA18913C888.JPG",
+    "sourceSha256": "2fb383d7552e8398622b9240c88644d1ae5d02d5c1aa40ab55e1f69596f60c47",
+    "localSha256": "2f664dcaeb9eba486e5ae2d7c0144ca4a6d9d091b7c69d541598da4ecf72f372",
+    "localBytes": 39816,
+    "identity": "Explicitly confirmed by organizer"
   }
 ]

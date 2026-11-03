@@ -71,8 +71,8 @@ window.TOURNAMENT_DATA = {
       "publicName": "AZUAAAAO",
       "location": "",
       "country": "",
-      "photo": "",
-      "photoPosition": "50% 50%"
+      "photo": "assets/players/azuaaaao.webp",
+      "photoPosition": "50% 35%"
     },
     {
       "id": "PLY-0008",

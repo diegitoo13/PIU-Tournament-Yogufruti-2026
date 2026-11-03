@@ -35,7 +35,7 @@ for (const source of JSON.parse(fs.readFileSync('data/profile-assets.json', 'utf
   const hash = require('node:crypto').createHash('sha256').update(fs.readFileSync(source.localPath)).digest('hex');
   assert.equal(hash,source.localSha256,`Profile asset integrity: ${source.player}`);
 }
-assert.equal(data.players.filter(player => player.photo).length,5);
+assert.equal(data.players.filter(player => player.photo).length,6);
 const catalogContext = {window:{}};
 vm.runInNewContext(fs.readFileSync('data/catalog.js','utf8'),catalogContext);
 assert.deepEqual(JSON.parse(JSON.stringify(catalogContext.window.PHOENIX_CATALOG)),catalog,'Browser and portable catalog match');

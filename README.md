@@ -14,7 +14,7 @@ node tests/rewind-display.test.js
 node --check app.js
 ```
 
-The site contains eleven players and 132 attempts, 98 identified songs with local covers and 833 current Single/Double chart records. Standings count the best eligible tournament points per player and canonical song. Search, player/level/mode filters and sorting persist in shareable URLs. Score tables reflow into cards on mobile. Five confirmed profile photos and the supplied event photos are included.
+The site contains eleven players and 132 attempts, 98 identified songs with local covers and 833 current Single/Double chart records. Standings count the best eligible tournament points per player and canonical song. Search, player/level/mode filters and sorting persist in shareable URLs. Score tables reflow into cards on mobile. Six confirmed profile photos and the supplied event photos are included.
 
 ## Import results
 

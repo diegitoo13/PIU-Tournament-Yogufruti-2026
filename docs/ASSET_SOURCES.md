@@ -118,7 +118,7 @@ Dream To Nightmare uses the exact legacy card `/img/card/135.png` referenced by 
 
 ## Supplied player and event images
 
-The organizer explicitly identified `assets/players/diegitoo113.webp`, `ghost.webp`, `sprada.webp`, `thejmaxx.webp` (THEJMAXX, supplied as “tjmaxx”) and `santana.webp`. `data/profile-assets.json` records original filenames, SHA-256 hashes and derivative sizes. Images were resized and converted with EXIF removed; no generated content is used. Remaining portraits use initials.
+The organizer explicitly identified `assets/players/diegitoo113.webp`, `ghost.webp`, `sprada.webp`, `thejmaxx.webp` (THEJMAXX, supplied as “tjmaxx”), `santana.webp` and `azuaaaao.webp`. `data/profile-assets.json` records original filenames, SHA-256 hashes and derivative sizes. Images were resized and converted with EXIF removed; no generated content is used. Remaining portraits use initials.
 
 `assets/event/participants.webp`, `invitation.webp` and `finisher-medal.webp` are user-supplied. `data/event-assets.json` records their hashes. The medal is labeled Finisher and is not presented as a first-place award. The group photo is not used to assign identities.
 
