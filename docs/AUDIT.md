@@ -24,7 +24,7 @@ All grade multipliers match the written table. The maximum is 3,680 per song; th
 | AZUAAAAO | 11,075 | 12 |
 | YXYZYXY | 10,835 | 12 |
 
-All imported attempt points equal the supplied source points. All five workbook totals reconcile with the CSV additions; NUMI's twelve CSV attempts total 21,855; AZUAAAAO's twelve total 11,075; THEJMAXX's twelve total 33,020; SANTANA's twelve total 22,575; YESIIITL's twelve total 15,640; YXYZYXY's twelve total 10,835. SOYASAUCE's workbook total of 25,365 plus the organizer-confirmed Doppelganger S16 capture (2,480) reaches 27,845. An independent row-level check compared 2,244 values and found no differences. 131 of 132 attempts contain Perfect, Great, Good, Bad and Miss counts; the Doppelganger S16 capture has no readable judgments, combo or calories, and only one machine score is unavailable. Rankings remain provisional because timing and pass/break status are unverified; three SOYASAUCE song identities are also pending.
+All imported attempt points equal the supplied source points. All five workbook totals reconcile with the CSV additions; NUMI's twelve CSV attempts total 21,855; AZUAAAAO's twelve total 11,075; THEJMAXX's twelve total 33,020; SANTANA's twelve total 22,575; YESIIITL's twelve total 15,640; YXYZYXY's twelve total 10,835. SOYASAUCE's workbook total of 25,365 plus the organizer-confirmed Doppelganger S16 capture (2,480) reaches 27,845. An independent row-level check compared 2,244 values and found no differences. 131 of 132 attempts contain Perfect, Great, Good, Bad and Miss counts; the Doppelganger S16 capture has no readable judgments, combo or calories, and only one machine score is unavailable. The organizer declared the result set complete, so the site no longer labels standings provisional. Timing and pass/break status remain unverified where not supplied, and three SOYASAUCE song identities stay N/A because their source photos were never supplied.
 
 ## Corrections and provenance
 
@@ -45,7 +45,7 @@ All imported attempt points equal the supplied source points. All five workbook 
 
 | Gap | Handling |
 | --- | --- |
-| Three SOYASAUCE titles (SONG-0046, SONG-0047, SONG-0053) | N/A artwork/title; supplied points provisional until canonical identities and duplicates can be checked |
+| Three SOYASAUCE titles (SONG-0046, SONG-0047, SONG-0053) | N/A artwork/title; source photos never supplied, so recorded points stand as submitted |
 | SOYASAUCE 404 (New Era) machine score | N/A; grade and tournament points retained |
 | Doppelganger S16 judgments, combo and calories (blurry capture) | N/A; grade and tournament points retained |
 | Doppelganger S16 chart level | Not legible in the capture; the Lv. 16 SSS+ estimate is used on organizer confirmation and flagged on the result |

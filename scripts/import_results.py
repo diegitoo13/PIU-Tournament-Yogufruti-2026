@@ -69,7 +69,6 @@ for player in raw_players:
         'location':player.get('pueblo') or '', 'country':player.get('pais') or '',
         'photo':profiles.get(player_id,{}).get('photo',''),
         'photoPosition':profiles.get(player_id,{}).get('photoPosition','50% 50%'),
-        'resultStatus':'recorded',
     })
 
 results = []
@@ -99,7 +98,7 @@ for raw in raw_attempts.values():
         'reviewNote':None,
     }
     if not result['songIdentityVerified']:
-        result['reviewNote']='Song title is unverified. Points follow the supplied workbook and remain provisional until song identity and duplicate checks are complete.'
+        result['reviewNote']='Song title is not recoverable because the source photo is unavailable. Recorded as Song N/A; points follow the supplied workbook.'
     elif raw['player_id']=='PLY-0006' and raw['attempt_id'] in ['ATT-00068','ATT-00069']:
         result['reviewNote']='Assigned to NUMI by participant confirmation, although the source screenshot shows SPRADA’s game profile.'
     elif raw['player_id']=='PLY-0011' and raw['attempt_id'] in ['ATT-00120','ATT-00121']:
@@ -119,7 +118,7 @@ manifest = {
     'unresolvedSongKeys':sorted({result['sourceSongKey'] for result in results if not result['songIdentityVerified']}),
     'corrections':['SPRADA photo identified explicitly by organizer','83 corrected to B3 by organizer','Ghost Bloody Train 995092 is already ATT-00059; not duplicated','Readable SOYASAUCE photos used to recover seven song identities','NUMI KUGUTSU source alias shares the canonical song ID with the existing catalog','THEJMAXX profile photo supplied by the organizer (tjmaxx)','F(R)IEND matched to Friend through the database song-title table','Because of You matched to the Becouse of You database spelling','SOYASAUCE Doppelganger S16 supplied as a partial capture and confirmed by the organizer as the missing twelfth chart'],
 }
-data = {'event':{'id':'yogufruti-2026','sourceEventId':'PIU-PR-2026-11-01','title':'West Side Tournament 2026','location':'Aguadilla, Puerto Rico','date':'2026-11-01','status':'provisional','minLevel':5,'maxLevel':23,'sessionSeconds':1800},'players':players,'results':results}
+data = {'event':{'id':'yogufruti-2026','sourceEventId':'PIU-PR-2026-11-01','title':'West Side Tournament 2026','location':'Aguadilla, Puerto Rico','date':'2026-11-01','status':'complete','minLevel':5,'maxLevel':23,'sessionSeconds':1800},'players':players,'results':results}
 (ROOT/'data/results.json').write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
 (ROOT/'data/results.js').write_text('window.TOURNAMENT_DATA = '+json.dumps(data,ensure_ascii=False,indent=2)+';\n')
 (ROOT/'data/import-manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')

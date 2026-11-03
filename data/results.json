@@ -5,7 +5,7 @@
     "title": "West Side Tournament 2026",
     "location": "Aguadilla, Puerto Rico",
     "date": "2026-11-01",
-    "status": "provisional",
+    "status": "complete",
     "minLevel": 5,
     "maxLevel": 23,
     "sessionSeconds": 1800
@@ -18,8 +18,7 @@
       "location": "",
       "country": "",
       "photo": "assets/players/diegitoo113.webp",
-      "photoPosition": "30% 35%",
-      "resultStatus": "recorded"
+      "photoPosition": "30% 35%"
     },
     {
       "id": "PLY-0002",
@@ -28,8 +27,7 @@
       "location": "",
       "country": "",
       "photo": "assets/players/ghost.webp",
-      "photoPosition": "24% 72%",
-      "resultStatus": "recorded"
+      "photoPosition": "24% 72%"
     },
     {
       "id": "PLY-0003",
@@ -38,8 +36,7 @@
       "location": "",
       "country": "",
       "photo": "assets/players/sprada.webp",
-      "photoPosition": "50% 45%",
-      "resultStatus": "recorded"
+      "photoPosition": "50% 45%"
     },
     {
       "id": "PLY-0004",
@@ -48,8 +45,7 @@
       "location": "",
       "country": "",
       "photo": "",
-      "photoPosition": "50% 50%",
-      "resultStatus": "recorded"
+      "photoPosition": "50% 50%"
     },
     {
       "id": "PLY-0005",
@@ -58,8 +54,7 @@
       "location": "",
       "country": "",
       "photo": "",
-      "photoPosition": "50% 50%",
-      "resultStatus": "recorded"
+      "photoPosition": "50% 50%"
     },
     {
       "id": "PLY-0006",
@@ -68,8 +63,7 @@
       "location": "",
       "country": "",
       "photo": "",
-      "photoPosition": "50% 50%",
-      "resultStatus": "recorded"
+      "photoPosition": "50% 50%"
     },
     {
       "id": "PLY-0007",
@@ -78,8 +72,7 @@
       "location": "",
       "country": "",
       "photo": "",
-      "photoPosition": "50% 50%",
-      "resultStatus": "recorded"
+      "photoPosition": "50% 50%"
     },
     {
       "id": "PLY-0008",
@@ -88,8 +81,7 @@
       "location": "",
       "country": "",
       "photo": "assets/players/thejmaxx.webp",
-      "photoPosition": "50% 30%",
-      "resultStatus": "recorded"
+      "photoPosition": "50% 30%"
     },
     {
       "id": "PLY-0009",
@@ -98,8 +90,7 @@
       "location": "",
       "country": "",
       "photo": "assets/players/santana.webp",
-      "photoPosition": "52% 40%",
-      "resultStatus": "recorded"
+      "photoPosition": "52% 40%"
     },
     {
       "id": "PLY-0010",
@@ -108,8 +99,7 @@
       "location": "",
       "country": "",
       "photo": "",
-      "photoPosition": "50% 50%",
-      "resultStatus": "recorded"
+      "photoPosition": "50% 50%"
     },
     {
       "id": "PLY-0011",
@@ -118,8 +108,7 @@
       "location": "",
       "country": "",
       "photo": "",
-      "photoPosition": "50% 50%",
-      "resultStatus": "recorded"
+      "photoPosition": "50% 50%"
     }
   ],
   "results": [
@@ -1934,7 +1923,7 @@
         "range": "A55:AH55",
         "judgmentRange": "K55:O55"
       },
-      "reviewNote": "Song title is unverified. Points follow the supplied workbook and remain provisional until song identity and duplicate checks are complete."
+      "reviewNote": "Song title is not recoverable because the source photo is unavailable. Recorded as Song N/A; points follow the supplied workbook."
     },
     {
       "id": "ATT-00050",
@@ -1971,7 +1960,7 @@
         "range": "A56:AH56",
         "judgmentRange": "K56:O56"
       },
-      "reviewNote": "Song title is unverified. Points follow the supplied workbook and remain provisional until song identity and duplicate checks are complete."
+      "reviewNote": "Song title is not recoverable because the source photo is unavailable. Recorded as Song N/A; points follow the supplied workbook."
     },
     {
       "id": "ATT-00051",
@@ -2193,7 +2182,7 @@
         "range": "A62:AH62",
         "judgmentRange": "K62:O62"
       },
-      "reviewNote": "Song title is unverified. Points follow the supplied workbook and remain provisional until song identity and duplicate checks are complete."
+      "reviewNote": "Song title is not recoverable because the source photo is unavailable. Recorded as Song N/A; points follow the supplied workbook."
     },
     {
       "id": "ATT-00057",

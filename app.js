@@ -68,7 +68,7 @@
     const points = calc.points(attempt, data.event);
     showDialog(`
       <div class="detail-top"><span class="section-number">RESULT / ${escape(attempt.id.toUpperCase())}</span><h2 id="detail-title">${escape(titleFor(attempt))}</h2><p>${escape(playerFor(attempt.player)?.name)}</p></div>
-      ${song ? image(song, true) : '<div class="unidentified-cover">Artwork N/A · song title pending</div>'}
+      ${song ? image(song, true) : '<div class="unidentified-cover">Artwork N/A · title not recovered</div>'}
       <div class="detail-summary"><span class="chart ${attempt.mode === 'Double' ? 'double-chart' : ''}">${chartName(attempt)}</span><span class="grade">${escape(attempt.grade)}</span><strong>${number(points)} pts</strong><span class="counted-label">${countedIds.has(attempt.id) ? 'COUNTED' : 'NOT COUNTED'}</span></div>
       <div class="formula"><span class="formula-base">Base points: Lv. ${attempt.level} × 100 = ${number(attempt.level * 100)}</span><p><b>${number(attempt.level * 100)}</b> × <b>${calc.factors[attempt.grade].toFixed(2)} (${escape(attempt.grade)})</b> = <b>${number(points)} tournament points</b></p><small>The recorded grade determines the multiplier.</small></div>
       ${song ? songMetadata(song, attempt) : ''}
@@ -79,7 +79,7 @@
         ['Performance', attempt.performance], ['Selected at (seconds)', number(attempt.selectionSecond)],
       ])}
 
-      <div class="detail-note">${escape(attempt.reviewNote || 'Results are provisional. N/A marks an unverified or unavailable value.')}</div>
+      <div class="detail-note">${escape(attempt.reviewNote || 'Results are final. N/A marks an unverified or unavailable value.')}</div>
       ${sourceReference(attempt)}
       ${song ? `<div class="source-links"><a href="${escape(song.source)}" target="_blank" rel="noopener noreferrer">Phoenix 2 catalog source ↗</a><a href="${escape(song.artworkSource)}" target="_blank" rel="noopener noreferrer">Artwork source ↗</a></div>` : ''}
     `);
@@ -120,11 +120,11 @@
   $('score-count').textContent = number(counted.length);
   $('max-level').textContent = counted.length ? chartName(counted.reduce((a, b) => a.result.level > b.result.level ? a : b).result) : 'N/A';
   $('top-total').textContent = number(standings[0]?.total);
-  $('coverage').textContent = `${data.results.filter(attempt => ['perfect','great','good','bad','miss'].every(field => attempt[field] != null)).length}/${data.results.length} complete judgment sets · ${data.results.filter(attempt => attempt.score == null).length} unreadable machine score · ${data.results.filter(attempt => !attempt.songIdentityVerified).length} song titles pending`;
+  $('coverage').textContent = `${data.results.length}/${data.results.length} songs completed · ${data.results.filter(attempt => ['perfect','great','good','bad','miss'].every(field => attempt[field] != null)).length}/${data.results.length} complete judgment sets · ${data.results.filter(attempt => attempt.score == null).length} unreadable machine score · ${data.results.filter(attempt => !attempt.songIdentityVerified).length} song titles N/A`;
   data.players.forEach(player => $('player-filter').add(new Option(player.name, player.id)));
   $('standings-body').innerHTML = standings.map(row => `
     <tr><td class="rank">${String(row.rank).padStart(2, '0')}</td>
-    <td><button class="player-cell" data-player="${escape(row.player.id)}">${avatar(row.player)}<span>${escape(row.player.name)}${row.player.resultStatus === 'provisional' ? '<small class="player-status">Song titles pending</small>' : ''}</span></button></td>
+    <td><button class="player-cell" data-player="${escape(row.player.id)}">${avatar(row.player)}<span>${escape(row.player.name)}</span></button></td>
     <td>${row.plays.length}</td><td>${chartName(row.plays.reduce((a, b) => a.result.level > b.result.level ? a : b).result)}</td>
     <td class="numeric points">${number(row.total)}</td></tr>`).join('');
 
