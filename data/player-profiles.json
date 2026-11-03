@@ -1,5 +1,27 @@
 {
-  "PLY-0001": {"photo":"assets/players/diegitoo113.webp","photoPosition":"30% 35%","identitySource":"Organizer confirmed IMG_4096.jpg as DIEGITOO113"},
-  "PLY-0002": {"photo":"assets/players/ghost.webp","photoPosition":"24% 72%","identitySource":"Organizer identified the photo with the S score as GHOST"},
-  "PLY-0003": {"photo":"assets/players/sprada.webp","photoPosition":"50% 45%","identitySource":"Organizer explicitly confirmed SPRADA rather than AIDEN"}
+  "PLY-0001": {
+    "photo": "assets/players/diegitoo113.webp",
+    "photoPosition": "30% 35%",
+    "identitySource": "Organizer confirmed IMG_4096.jpg as DIEGITOO113"
+  },
+  "PLY-0002": {
+    "photo": "assets/players/ghost.webp",
+    "photoPosition": "24% 72%",
+    "identitySource": "Organizer identified the photo with the S score as GHOST"
+  },
+  "PLY-0003": {
+    "photo": "assets/players/sprada.webp",
+    "photoPosition": "50% 45%",
+    "identitySource": "Organizer explicitly confirmed SPRADA rather than AIDEN"
+  },
+  "PLY-0008": {
+    "photo": "assets/players/thejmaxx.webp",
+    "photoPosition": "50% 30%",
+    "identitySource": "Organizer supplied this photo as THEJMAXX profile picture (tjmaxx)"
+  },
+  "PLY-0009": {
+    "photo": "assets/players/santana.webp",
+    "photoPosition": "52% 40%",
+    "identitySource": "Organizer supplied this photo as SANTANA profile picture"
+  }
 }

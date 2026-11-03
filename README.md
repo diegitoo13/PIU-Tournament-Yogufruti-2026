@@ -14,7 +14,7 @@ node tests/rewind-display.test.js
 node --check app.js
 ```
 
-The site contains nine players and 107 attempts, 81 identified songs with local covers and 683 current Single/Double chart records. Standings count the best eligible tournament points per player and canonical song. Search, player/level/mode filters and sorting persist in shareable URLs. Score tables reflow into cards on mobile. Three confirmed profile photos and the supplied event photos are included.
+The site contains eleven players and 132 attempts, 98 identified songs with local covers and 833 current Single/Double chart records. Standings count the best eligible tournament points per player and canonical song. Search, player/level/mode filters and sorting persist in shareable URLs. Score tables reflow into cards on mobile. Five confirmed profile photos and the supplied event photos are included.
 
 ## Import results
 
@@ -24,9 +24,9 @@ Install `openpyxl`, then run the read-only importer:
 python scripts/import_results.py /absolute/path/to/tournament.xlsx /absolute/path/to/numi.csv /absolute/path/to/azua.csv
 ```
 
-It reads the normalized workbook tables (headers on row 6), upserts the optional CSVs by attempt ID, and writes portable `data/results.json`, browser `data/results.js`, and an input hash manifest. The current inputs are `Torneo_PIU_2026_Resultados_5_Jugadores.xlsx` and `PIU_2026_Intentos_NUMI_12_corregidos.csv`, and `AZUAAAAO_12_canciones_datos_completos.csv`, and `PIU_2026_THEJMAXX_SANTANA_12_canciones_cada_uno.csv`. Source files are not modified or published. `data/workbook-song-map.json` contains reviewed canonical song mappings; `data/player-profiles.json` contains confirmed profile overrides. Review new mappings and player IDs before importing a different tournament.
+It reads the normalized workbook tables (headers on row 6), upserts the optional CSVs by attempt ID, and writes portable `data/results.json`, browser `data/results.js`, and an input hash manifest. The current inputs are `Torneo_PIU_2026_Resultados_5_Jugadores.xlsx` and `PIU_2026_Intentos_NUMI_12_corregidos.csv`, and `AZUAAAAO_12_canciones_datos_completos.csv`, and `PIU_2026_THEJMAXX_SANTANA_12_canciones_cada_uno.csv`, and `PIU_2026_YESIIITL_12_canciones_datos_completos.csv`, and `PIU_2026_YXYZYXY_12_canciones_completas.csv`, and `PIU_2026_SOYASAUCE_Doppelganger_S16_corregido.csv` (normalized from the organizer-supplied partial capture). Source files are not modified or published. `data/workbook-song-map.json` contains reviewed canonical song mappings; `data/player-profiles.json` contains confirmed profile overrides. Review new mappings and player IDs before importing a different tournament.
 
-`scoring.js` handles grade factors, Lv. 5–23 eligibility, best-per-song deduplication and tied ranks. The 3,680-point maximum applies to one song; the session total sums all eligible unique songs selected before 30:00, with no fixed song-count limit. The tests reconcile every imported attempt's points and all five workbook totals, plus NUMI's 21,855-point AZUAAAAO's 11,075-point, THEJMAXX's 33,020-point and SANTANA's 22,575-point totals. DIEGITOO113 remains at 31,580 points, including full S23 points. Do not infer eligibility or game timing from image filenames or upload order.
+`scoring.js` handles grade factors, Lv. 5–23 eligibility, best-per-song deduplication and tied ranks. The 3,680-point maximum applies to one song; the session total sums all eligible unique songs selected before 30:00, with no fixed song-count limit. The tests reconcile every imported attempt's points and all five workbook totals plus supplied CSV points, with NUMI's 21,855-point, AZUAAAAO's 11,075-point, THEJMAXX's 33,020-point, SANTANA's 22,575-point, YESIIITL's 15,640-point and YXYZYXY's 10,835-point totals. SOYASAUCE rises to 27,845 points with the organizer-confirmed twelfth chart. DIEGITOO113 remains at 31,580 points, including full S23 points. Do not infer eligibility or game timing from image filenames or upload order.
 
 ## Validate source data
 
@@ -34,7 +34,7 @@ Run `python scripts/validate_results.py` with the same workbook and CSV argument
 
 ## Missing data
 
-SOYASAUCE has 11 supplied attempts, including the final Ghost Bloody Train photo already recorded as ATT-00059. Three song identities remain N/A; their supplied points are provisional pending identity and duplicate review. One machine score is unreadable. Missing values are shown as N/A; unverified timing and pass/break status remain explicit. Other player portraits use initials. No location, duration, note count or exact timestamp is invented. See `docs/AUDIT.md`.
+SOYASAUCE has twelve supplied attempts: the twelfth is the organizer-confirmed partial Doppelganger S16 capture (ATT-00132), whose chart level is plausible but not legible in the photo; its judgments, combo and calories stay N/A. The final Ghost Bloody Train photo is already recorded as ATT-00059. Three song identities remain N/A; their supplied points are provisional pending identity and duplicate review. One machine score is unreadable. Missing values are shown as N/A; unverified timing and pass/break status remain explicit. YXYZYXY’s earliest captures carry a GMT+9 timestamp that must be confirmed against the tournament window before results are official. Other player portraits use initials. No location, duration, note count or exact timestamp is invented. See `docs/AUDIT.md`.
 
 ## Rebuild metadata and covers
 

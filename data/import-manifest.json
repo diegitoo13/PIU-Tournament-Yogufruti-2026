@@ -15,21 +15,35 @@
     {
       "file": "PIU_2026_THEJMAXX_SANTANA_12_canciones_cada_uno.csv",
       "sha256": "7ca84fdc906ac291eee7b3250c462c5e1c4c4a82c6f8db06a4bb1ea9b08a6d64"
+    },
+    {
+      "file": "PIU_2026_YESIIITL_12_canciones_datos_completos.csv",
+      "sha256": "8aebf018818d21a0a28a85626ce70313eba6f5fc6ee019e393bb7daf32af7fa1"
+    },
+    {
+      "file": "PIU_2026_YXYZYXY_12_canciones_completas.csv",
+      "sha256": "f2444f0c249275afa2793724e1687d51efc6a0b423f60124cc2aeb95b7f393fd"
+    },
+    {
+      "file": "PIU_2026_SOYASAUCE_Doppelganger_S16_corregido.csv",
+      "sha256": "8aa953575c2d7d07f95e820c83bd0a3000b3c9da54ddc21bb6ed155ddd9de177"
     }
   ],
   "importDate": "2026-11-01",
-  "playerCount": 9,
-  "attemptCount": 107,
+  "playerCount": 11,
+  "attemptCount": 132,
   "resultCounts": {
     "PLY-0001": 12,
     "PLY-0002": 12,
     "PLY-0003": 12,
     "PLY-0004": 12,
-    "PLY-0005": 11,
+    "PLY-0005": 12,
     "PLY-0006": 12,
     "PLY-0007": 12,
     "PLY-0008": 12,
-    "PLY-0009": 12
+    "PLY-0009": 12,
+    "PLY-0010": 12,
+    "PLY-0011": 12
   },
   "expectedWorkbookTotals": {
     "PLY-0001": 31580,
@@ -48,6 +62,10 @@
     "83 corrected to B3 by organizer",
     "Ghost Bloody Train 995092 is already ATT-00059; not duplicated",
     "Readable SOYASAUCE photos used to recover seven song identities",
-    "NUMI KUGUTSU source alias shares the canonical song ID with the existing catalog"
+    "NUMI KUGUTSU source alias shares the canonical song ID with the existing catalog",
+    "THEJMAXX profile photo supplied by the organizer (tjmaxx)",
+    "F(R)IEND matched to Friend through the database song-title table",
+    "Because of You matched to the Becouse of You database spelling",
+    "SOYASAUCE Doppelganger S16 supplied as a partial capture and confirmed by the organizer as the missing twelfth chart"
   ]
 }

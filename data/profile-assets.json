@@ -25,5 +25,23 @@
     "localSha256": "86ef60600625232d8d42c65ce095120183308a5b54fa62ddc33d73c050f875c1",
     "localBytes": 88524,
     "identity": "Explicitly confirmed by organizer"
+  },
+  {
+    "player": "thejmaxx",
+    "localPath": "assets/players/thejmaxx.webp",
+    "sourceFilename": "att.rCcItoxQQNZISp4e84crKxNQ6cOuWdOw2a4HRSs1Jrc.JPG",
+    "sourceSha256": "d0e1bb819eba54907b9519f3687f6f4d50ab85b980b0ef898137c4a51cae06a0",
+    "localSha256": "7965bf6967622370ad7a91182b51e9eea52bd044d52399cc6552cf8a32f6ff42",
+    "localBytes": 104322,
+    "identity": "Explicitly confirmed by organizer"
+  },
+  {
+    "player": "santana",
+    "localPath": "assets/players/santana.webp",
+    "sourceFilename": "34D1CBF4-C06C-4DFA-A236-BBF15E887F34.jpg",
+    "sourceSha256": "29b2fc9710377864cd7189fdfaad0281cea951a9d01abf4adc654986d59afbc2",
+    "localSha256": "48b03098c12ca0f87b887fcf547de28b0b084c65cebb1fa278d188c0dc6bbc1d",
+    "localBytes": 30836,
+    "identity": "Explicitly confirmed by organizer"
   }
 ]

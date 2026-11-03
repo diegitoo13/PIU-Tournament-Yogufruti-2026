@@ -1,8 +1,8 @@
 {
   "reviewedAt": "2026-11-01",
-  "attemptCount": 107,
-  "comparedValues": 1819,
-  "completeJudgmentAttempts": 107,
+  "attemptCount": 132,
+  "comparedValues": 2244,
+  "completeJudgmentAttempts": 131,
   "allSourceValuesMatch": true,
   "differences": [],
   "missingMachineValues": [
@@ -17,6 +17,136 @@
         "row": 63,
         "range": "A63:AH63",
         "judgmentRange": "K63:O63"
+      }
+    },
+    {
+      "attempt": "ATT-00120",
+      "player": "YXYZYXY",
+      "song": "Punishment Restaurant",
+      "field": "combo",
+      "sourceReference": {
+        "file": "PIU_2026_YXYZYXY_12_canciones_completas.csv",
+        "row": 2
+      }
+    },
+    {
+      "attempt": "ATT-00120",
+      "player": "YXYZYXY",
+      "song": "Punishment Restaurant",
+      "field": "kcal",
+      "sourceReference": {
+        "file": "PIU_2026_YXYZYXY_12_canciones_completas.csv",
+        "row": 2
+      }
+    },
+    {
+      "attempt": "ATT-00121",
+      "player": "YXYZYXY",
+      "song": "Euphorianic",
+      "field": "combo",
+      "sourceReference": {
+        "file": "PIU_2026_YXYZYXY_12_canciones_completas.csv",
+        "row": 3
+      }
+    },
+    {
+      "attempt": "ATT-00121",
+      "player": "YXYZYXY",
+      "song": "Euphorianic",
+      "field": "kcal",
+      "sourceReference": {
+        "file": "PIU_2026_YXYZYXY_12_canciones_completas.csv",
+        "row": 3
+      }
+    },
+    {
+      "attempt": "ATT-00122",
+      "player": "YXYZYXY",
+      "song": "Black Swan",
+      "field": "combo",
+      "sourceReference": {
+        "file": "PIU_2026_YXYZYXY_12_canciones_completas.csv",
+        "row": 4
+      }
+    },
+    {
+      "attempt": "ATT-00122",
+      "player": "YXYZYXY",
+      "song": "Black Swan",
+      "field": "kcal",
+      "sourceReference": {
+        "file": "PIU_2026_YXYZYXY_12_canciones_completas.csv",
+        "row": 4
+      }
+    },
+    {
+      "attempt": "ATT-00132",
+      "player": "SOYASAUCE",
+      "song": "Doppelganger",
+      "field": "perfect",
+      "sourceReference": {
+        "file": "PIU_2026_SOYASAUCE_Doppelganger_S16_corregido.csv",
+        "row": 2
+      }
+    },
+    {
+      "attempt": "ATT-00132",
+      "player": "SOYASAUCE",
+      "song": "Doppelganger",
+      "field": "great",
+      "sourceReference": {
+        "file": "PIU_2026_SOYASAUCE_Doppelganger_S16_corregido.csv",
+        "row": 2
+      }
+    },
+    {
+      "attempt": "ATT-00132",
+      "player": "SOYASAUCE",
+      "song": "Doppelganger",
+      "field": "good",
+      "sourceReference": {
+        "file": "PIU_2026_SOYASAUCE_Doppelganger_S16_corregido.csv",
+        "row": 2
+      }
+    },
+    {
+      "attempt": "ATT-00132",
+      "player": "SOYASAUCE",
+      "song": "Doppelganger",
+      "field": "bad",
+      "sourceReference": {
+        "file": "PIU_2026_SOYASAUCE_Doppelganger_S16_corregido.csv",
+        "row": 2
+      }
+    },
+    {
+      "attempt": "ATT-00132",
+      "player": "SOYASAUCE",
+      "song": "Doppelganger",
+      "field": "miss",
+      "sourceReference": {
+        "file": "PIU_2026_SOYASAUCE_Doppelganger_S16_corregido.csv",
+        "row": 2
+      }
+    },
+    {
+      "attempt": "ATT-00132",
+      "player": "SOYASAUCE",
+      "song": "Doppelganger",
+      "field": "combo",
+      "sourceReference": {
+        "file": "PIU_2026_SOYASAUCE_Doppelganger_S16_corregido.csv",
+        "row": 2
+      }
+    },
+    {
+      "attempt": "ATT-00132",
+      "player": "SOYASAUCE",
+      "song": "Doppelganger",
+      "field": "kcal",
+      "sourceReference": {
+        "file": "PIU_2026_SOYASAUCE_Doppelganger_S16_corregido.csv",
+        "row": 2
       }
     }
   ],
@@ -36,6 +166,18 @@
     {
       "file": "PIU_2026_THEJMAXX_SANTANA_12_canciones_cada_uno.csv",
       "sha256": "7ca84fdc906ac291eee7b3250c462c5e1c4c4a82c6f8db06a4bb1ea9b08a6d64"
+    },
+    {
+      "file": "PIU_2026_YESIIITL_12_canciones_datos_completos.csv",
+      "sha256": "8aebf018818d21a0a28a85626ce70313eba6f5fc6ee019e393bb7daf32af7fa1"
+    },
+    {
+      "file": "PIU_2026_YXYZYXY_12_canciones_completas.csv",
+      "sha256": "f2444f0c249275afa2793724e1687d51efc6a0b423f60124cc2aeb95b7f393fd"
+    },
+    {
+      "file": "PIU_2026_SOYASAUCE_Doppelganger_S16_corregido.csv",
+      "sha256": "8aa953575c2d7d07f95e820c83bd0a3000b3c9da54ddc21bb6ed155ddd9de177"
     }
   ]
 }

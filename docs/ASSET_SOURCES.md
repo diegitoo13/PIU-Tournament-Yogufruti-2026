@@ -1,6 +1,6 @@
 # Asset and metadata sources
 
-Reviewed November 1, 2026. All runtime images are local WebP files. The community catalog identifies songs and charts; tournament results come from the supplied workbook/CSV and readable score photos.
+Reviewed November 2, 2026. All runtime images are local WebP files. The community catalog identifies songs and charts; tournament results come from the supplied workbook/CSV and readable score photos.
 
 ## Catalog
 
@@ -11,7 +11,7 @@ Reviewed November 1, 2026. All runtime images are local WebP files. The communit
 
 ## Downloaded artwork
 
-All 81 identified songs have exact database-matched artwork. Covers and thumbnails preserve proportions; source and derivative hashes are recorded in `data/asset-sources.json`. Three unidentified SOYASAUCE song records show N/A without substitute artwork.
+All 98 identified songs have exact database-matched artwork. Covers and thumbnails preserve proportions; source and derivative hashes are recorded in `data/asset-sources.json`. Three unidentified SOYASAUCE song records show N/A without substitute artwork.
 
 | Song | Source | Local cover | Source dimensions | Local bytes |
 | --- | --- | --- | --- | ---: |
@@ -96,12 +96,29 @@ All 81 identified songs have exact database-matched artwork. Covers and thumbnai
 | Doppelganger | [Source](https://raw.githubusercontent.com/aaaaaa2493/pumpout-db-updates/68d8cc356e585244b1dafd73a23b8c3386e6e31f/img_big/Phoenix_Doppelganger.png) | `assets/songs/1000-cover.webp` | 1920 × 1080 | 50,932 |
 | GLORIA | [Source](https://pumpout.anyhowstep.com/img/card/1699.png) | `assets/songs/887-cover.webp` | 250 × 188 | 8,166 |
 | Top City | [Source](https://pumpout.anyhowstep.com/img/card/710.png) | `assets/songs/438-cover.webp` | 250 × 188 | 9,676 |
+| Energy Synergy Matrix | [Source](https://raw.githubusercontent.com/aaaaaa2493/pumpout-db-updates/68d8cc356e585244b1dafd73a23b8c3386e6e31f/img_big/Phoenix_Energy_Synergy_Matrix.png) | `assets/songs/916-cover.webp` | 1920 × 1080 | 79,728 |
+| * this game does not exist * | [Source](https://raw.githubusercontent.com/aaaaaa2493/pumpout-db-updates/68d8cc356e585244b1dafd73a23b8c3386e6e31f/img_big/Phoenix__this_game_does_not_exist_.png) | `assets/songs/993-cover.webp` | 1920 × 1080 | 34,036 |
+| STORM | [Source](https://raw.githubusercontent.com/aaaaaa2493/pumpout-db-updates/68d8cc356e585244b1dafd73a23b8c3386e6e31f/img_big/Phoenix_STORM.png) | `assets/songs/923-cover.webp` | 1920 × 1080 | 159,874 |
+| Papasito feat. KuTiNA | [Source](https://pumpout.anyhowstep.com/img/card/16A1.png) | `assets/songs/786-cover.webp` | 250 × 188 | 14,942 |
+| Sudden Appearance Image | [Source](https://raw.githubusercontent.com/aaaaaa2493/pumpout-db-updates/68d8cc356e585244b1dafd73a23b8c3386e6e31f/img_big/Phoenix_Sudden_Appearance_Image.png) | `assets/songs/956-cover.webp` | 1280 × 720 | 16,232 |
+| Friend | [Source](https://pumpout.anyhowstep.com/img/card/1675.png) | `assets/songs/798-cover.webp` | 250 × 188 | 2,324 |
+| Soldiers | [Source](https://raw.githubusercontent.com/aaaaaa2493/pumpout-db-updates/68d8cc356e585244b1dafd73a23b8c3386e6e31f/img_big/Phoenix_Soldiers.png) | `assets/songs/998-cover.webp` | 1920 × 1080 | 38,932 |
+| Becouse of You | [Source](https://raw.githubusercontent.com/aaaaaa2493/pumpout-db-updates/68d8cc356e585244b1dafd73a23b8c3386e6e31f/img_big/Phoenix_Becouse_of_You.png) | `assets/songs/1034-cover.webp` | 1920 × 1080 | 74,982 |
+| Heliosphere | [Source](https://raw.githubusercontent.com/aaaaaa2493/pumpout-db-updates/68d8cc356e585244b1dafd73a23b8c3386e6e31f/img_big/Phoenix_Heliosphere.png) | `assets/songs/1054-cover.webp` | 2560 × 1440 | 63,520 |
+| Flavor Step! | [Source](https://raw.githubusercontent.com/aaaaaa2493/pumpout-db-updates/68d8cc356e585244b1dafd73a23b8c3386e6e31f/img_big/Phoenix_Flavor_Step.png) | `assets/songs/953-cover.webp` | 1280 × 720 | 82,598 |
+| Black Swan | [Source](https://pumpout.anyhowstep.com/img/card/xx-black-swan.png) | `assets/songs/756-cover.webp` | 250 × 188 | 7,758 |
+| Winter | [Source](https://pumpout.anyhowstep.com/img/card/29.png) | `assets/songs/34-cover.webp` | 250 × 188 | 14,686 |
+| Horang Pungryuga | [Source](https://raw.githubusercontent.com/aaaaaa2493/pumpout-db-updates/68d8cc356e585244b1dafd73a23b8c3386e6e31f/img_big/Phoenix_Horang_Pungryuga.png) | `assets/songs/974-cover.webp` | 1920 × 1080 | 61,160 |
+| Beethoven Virus | [Source](https://pumpout.anyhowstep.com/img/card/21.png) | `assets/songs/4-cover.webp` | 250 × 188 | 7,554 |
+| Dr. M | [Source](https://pumpout.anyhowstep.com/img/card/23.png) | `assets/songs/28-cover.webp` | 250 × 188 | 8,066 |
+| Festival of Death Moon | [Source](https://raw.githubusercontent.com/aaaaaa2493/pumpout-db-updates/68d8cc356e585244b1dafd73a23b8c3386e6e31f/img_big/Phoenix_Festival_of_Death_Moon.png) | `assets/songs/1005-cover.webp` | 1920 × 1080 | 74,170 |
+| Moonlight | [Source](https://pumpout.anyhowstep.com/img/card/258.png) | `assets/songs/48-cover.webp` | 250 × 188 | 8,450 |
 
 Dream To Nightmare uses the exact legacy card `/img/card/135.png` referenced by the database, preserved without upscaling.
 
 ## Supplied player and event images
 
-The organizer explicitly identified `assets/players/diegitoo113.webp`, `ghost.webp` and `sprada.webp`. `data/profile-assets.json` records original filenames, SHA-256 hashes and derivative sizes. Images were resized and converted with EXIF removed; no generated content is used. Other portraits remain initials.
+The organizer explicitly identified `assets/players/diegitoo113.webp`, `ghost.webp`, `sprada.webp`, `thejmaxx.webp` (THEJMAXX, supplied as “tjmaxx”) and `santana.webp`. `data/profile-assets.json` records original filenames, SHA-256 hashes and derivative sizes. Images were resized and converted with EXIF removed; no generated content is used. Remaining portraits use initials.
 
 `assets/event/participants.webp`, `invitation.webp` and `finisher-medal.webp` are user-supplied. `data/event-assets.json` records their hashes. The medal is labeled Finisher and is not presented as a first-place award. The group photo is not used to assign identities.
 
